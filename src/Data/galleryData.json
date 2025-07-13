@@ -1,0 +1,52 @@
+[
+  {
+    "category": "onboarding",
+    "url": "/images/onboarding1.jpg",
+    "alt": "Onboarding session with new interns"
+  },
+  {
+    "category": "community fair",
+    "url": "/images/community1.jpg",
+    "alt": "Community fair event"
+  },
+  {
+    "category": "alchemy",
+    "url": "/images/alchemy1.jpg",
+    "alt": "Alchemy brainstorming session"
+  },
+  {
+    "category": "leaders connect",
+    "url": "/images/leaders1.jpg",
+    "alt": "Leadership panel talk"
+  },
+  {
+    "category": "final presentation picture",
+    "url": "/images/presentation1.jpg",
+    "alt": "Final project presentation"
+  },
+  {
+    "category": "events and activities",
+    "url": "/images/events1.jpg",
+    "alt": "Outdoor team activity"
+  },
+  {
+    "category": "memes",
+    "url": "/images/meme1.jpg",
+    "alt": "Funny intern meme"
+  },
+  {
+    "category": "memes",
+    "url": "/images/meme2.jpg",
+    "alt": "Another funny meme"
+  },
+  {
+    "category": "community fair",
+    "url": "/images/community2.jpg",
+    "alt": "More community fun"
+  },
+  {
+    "category": "alchemy",
+    "url": "/images/alchemy2.jpg",
+    "alt": "Alchemy workshop"
+  }
+]
