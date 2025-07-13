@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { TeamPage } from './Pages/TeamPage'
 import FaqPage from './Pages/FaqPage'
+import Home from './Pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
