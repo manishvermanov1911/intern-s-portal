@@ -1,43 +1,69 @@
-// src/Pages/Gallery.jsx
+// src/pages/Gallery.jsx
 import React, { useState } from 'react';
-import galleryData from '../Data/galleryData.json'; // ✅ Your actual path
-import './Gallery.css'; // Make sure to style it accordingly
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+import '../styles/gallery.css'; // Optional styling
+
+const images = [
+  {
+    src: '/images/community.jpg',
+    label: 'Community Fair 2025',
+  },
+  {
+    src: '/images/alchemy.jpg',
+    label: 'Alchemy 2025',
+  },
+  {
+    src: '/images/yoga.jpg',
+    label: 'Yoga Day',
+  },
+  // Add more images here...
+];
 
 const Gallery = () => {
-  const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const openModal = (index) => setSelectedIndex(index);
-  const closeModal = () => setSelectedIndex(null);
-  const goNext = () => setSelectedIndex((prev) => (prev + 1) % galleryData.length);
-  const goPrev = () => setSelectedIndex((prev) => (prev - 1 + galleryData.length) % galleryData.length);
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <div className="gallery-container">
-      <div className="image-grid">
-        {galleryData.map((img, idx) => (
-          <img
-            key={idx}
-            src={img.url}
-            alt={img.alt || 'Gallery Image'}
-            className="gallery-image"
-            onClick={() => openModal(idx)}
-          />
+    <div className="gallery-page">
+      <header className="gallery-header">
+        <h1>Gallery</h1>
+        <p>A home for our memories.</p>
+      </header>
+
+      <div className="gallery-grid">
+        {images.map((img, index) => (
+          <div
+            className="gallery-item"
+            key={index}
+            onClick={() => {
+              setPhotoIndex(index);
+              setIsOpen(true);
+            }}
+            style={{
+              backgroundImage: `url(${img.src})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="gallery-label">{img.label}</div>
+          </div>
         ))}
       </div>
 
-      {selectedIndex !== null && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={galleryData[selectedIndex].url}
-              alt={galleryData[selectedIndex].alt || 'Full Image'}
-              className="modal-image"
-            />
-            <button className="close-button" onClick={closeModal}>×</button>
-            <button className="prev-button" onClick={goPrev}>⟨</button>
-            <button className="next-button" onClick={goNext}>⟩</button>
-          </div>
-        </div>
+      {isOpen && (
+        <Lightbox
+          mainSrc={images[photoIndex].src}
+          nextSrc={images[(photoIndex + 1) % images.length].src}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
       )}
     </div>
   );
