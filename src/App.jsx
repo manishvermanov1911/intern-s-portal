@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Gallery from './Pages/Gallery';
 import { TeamPage } from './Pages/TeamPage';
 import FaqPage from './Pages/FaqPage';
+import InternProfilePage from './Components/InternProfil';
+import ACSTree from './Components/ACSTree'; // ✅ Correctly imported
+
+import interns from './data/interns.json';
 
 function App() {
   return (
@@ -13,6 +17,8 @@ function App() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/team" element={<TeamPage />} />
       <Route path="/faq" element={<FaqPage />} />
+      <Route path="/intern/:id" element={<InternProfilePage interns={interns} />} />
+      <Route path="/tree" element={<ACSTree />} />
     </Routes>
   );
 }
