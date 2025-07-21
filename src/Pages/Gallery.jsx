@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import "../styles/gallery.css"; 
+import "../styles/gallery.css";
 
 import red from "../assets/gallery/red.png";
 import a1 from "../assets/gallery/a1.jpg";
@@ -183,8 +183,8 @@ const Gallery = () => {
 
   return (
     <div className="max-w-6xl px-4 mx-auto">
-      <div className="gallery-page">
-        <header className="gallery-header">
+      <div className="gallery-page mt-24">
+        <header className="gallery-header mb-8">
           <h1>Gallery</h1>
           <p>A home for our memories.</p>
         </header>
