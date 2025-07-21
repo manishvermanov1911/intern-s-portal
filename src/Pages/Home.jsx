@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <p className="font-body text-base md:text-lg max-w-sm md:max-w-3xl text-center text-[#FFF7E1] mb-24">
         This internship portal contains information about all the projects that
-        interns have worked on this summer, the events like Adobe Alchemy,
+        the ACS interns of 2025 worked on, the events like Adobe Alchemy,
         connecting with leaders, and much more. Get a glimpse into intern life
         at Adobe!
       </p>
@@ -138,10 +138,13 @@ export default function Home() {
       </div>
 
       <p className="max-w-sm md:max-w-3xl font-body text-base md:text-lg text-center text-[#FFF7E1] mb-8">
-        This internship portal contains information about all the projects that
-        interns have worked on this summer, the events like Adobe Alchemy,
-        connecting with leaders, and much more. Get a glimpse into intern life
-        at Adobe!
+        Adobe Consultancy Services (ACS) is a team of interns who collaborated
+        on various projects, learning and growing together. Each project had its
+        own unique focus, from UI/UX design to frontend development, and each
+        team member contributed their skills to create impactful solutions. ACS
+        is divided into several teams, each with its own area of expertise and
+        focus. Each team has a unique timeline of activities and milestones that
+        highlight their journey throughout the internship.
       </p>
       {/*TODO: flow chart here */}
       <p className="max-w-sm md:max-w-3xl font-body text-base md:text-lg text-center text-[#FFF7E1] mb-8">
