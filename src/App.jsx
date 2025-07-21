@@ -8,6 +8,7 @@ import FaqPage from './Pages/FaqPage';
 import Teams from './Pages/Teams';
 import InternProfilePage from './Components/InternProfile';
 import ACSTree from './Components/ACSTree'; // ✅ Correctly imported
+import NotFound from './Pages/NotFound';
 import interns from './data/interns.json';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/faq" element={<FaqPage />} />
       <Route path="/intern/:id" element={<InternProfilePage interns={interns} />} />
       <Route path="/tree" element={<ACSTree />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
