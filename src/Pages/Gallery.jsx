@@ -185,10 +185,12 @@ const Gallery = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <div className="gallery-page">
+    
+    <div className="gallery-page ">
       <header className="gallery-header">
-        <h1>Gallery</h1>
-        <p>A home for our memories.</p>
+            <h1>Gallery</h1>
+            <p>A home for our memories.</p>
+        
       </header>
 
       <div className="gallery-grid">
@@ -213,16 +215,10 @@ const Gallery = () => {
 
       {isOpen && (
         <Lightbox
-          mainSrc={images[photoIndex].src}
-          nextSrc={images[(photoIndex + 1) % images.length].src}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        index={photoIndex}
+        slides={images.map((img) => ({ src: img.src }))}
         />
       )}
     </div>
