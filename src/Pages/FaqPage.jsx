@@ -33,7 +33,7 @@ const CardBase = ({ label, text, bgImage }) => {
     >
       {/* Pill Label (Frame 13 style - different for Do / Don't) */}
       <div
-        className={`absolute flex justify-center items-center px-5 py-6 gap-[10px] font-urbanist text-[50px]`}
+        className={`absolute flex justify-center items-center px-5 py-6 gap-[10px] font-title text-[50px]`}
         style={{
           width: isDont ? "158px" : "108px",
           height: "106px",
@@ -50,7 +50,7 @@ const CardBase = ({ label, text, bgImage }) => {
       </div>
 
       {/* Description */}
-      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-[Instrument_Sans] text-[16px] sm:text-[18px] leading-[22px] z-30">
+      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-body text-[16px] sm:text-[18px] leading-[22px] z-30">
         {text}
       </p>
     </div>
@@ -69,10 +69,10 @@ const Frame128Wrapper = () => (
   <div className="w-full flex flex-col items-center px-4 mt-24">
     {/* Subheading ABOVE heading */}
 
-    <h2 className="text-[32px] sm:text-[36px] md:text-[48px] leading-[44px] md:leading-[58px] text-center font-['Urbanist'] text-[#FFF7E1] mb-2">
+    <h2 className="text-[32px] sm:text-[36px] md:text-[48px] leading-[44px] md:leading-[58px] text-center font-title text-[#FFF7E1] mb-2">
       Survival Kit
     </h2>
-    <p className="text-[16px] sm:text-[18px] leading-[22px] text-center font-['Instrument_Sans'] text-[#FFF7E1] max-w-[840px] mb-8">
+    <p className="text-[16px] sm:text-[18px] leading-[22px] text-center font-body text-[#FFF7E1] max-w-[840px] mb-8">
       A compilation of the wisdom of interns past.
       <br></br>Don’t make the same mistakes we did. Or do… but read this first.
     </p>
@@ -162,10 +162,10 @@ const faqData = [
 
 const FaqPage = () => (
   <div className="w-full bg-black text-[#FFF7E1] min-h-screen flex flex-col items-center px-4 pb-24">
-    <h1 className="text-[60px] md:text-[100px] text-center font-urbanist font-normal mt-32 mb-6">
+    <h1 className="text-[60px] md:text-[100px] text-center font-title font-normal mt-32 mb-6">
       FAQs
     </h1>
-    <p className="text-[16px] leading-[20px] text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-12">
+    <p className="text-[16px] leading-[20px] text-center font-body text-[#FFF7E1] max-w-[840px] mb-12">
       For everything you were too afraid to ask in the group chat.
     </p>
 

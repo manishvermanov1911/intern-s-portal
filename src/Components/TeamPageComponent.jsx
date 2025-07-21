@@ -21,14 +21,14 @@ const TeamPageComponent = ({
           <div className="mt-12 mb-8 self-start">
             <a
               href="/teams"
-              className="w-24 h-10 rounded-3xl flex items-center justify-center gap-2 transition"
+              className="w-24 h-10 rounded-3xl flex items-center justify-start gap-2 transition"
             >
               <img src={testArrow} alt="<" />
               <span className="font-body text-white text-sm">Teams</span>
             </a>
           </div>
         )}
-        <div className="relative text-5xl md:text-7xl text-center text-white md:text-[#FF0000] font-urbanist font-normal mt-0 md:mt-32 mb-4 w-full max-w-6xl">
+        <div className="relative text-5xl md:text-7xl text-center text-white md:text-[#FF0000] font-title font-normal mt-0 md:mt-32 mb-4 w-full max-w-6xl">
           {!isMobile ? team : team + " Members"}
 
           {/* Breadcrumb */}
@@ -49,13 +49,13 @@ const TeamPageComponent = ({
           )}
         </div>
         {isMobile && (
-          <div className="w-full text-lg text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
+          <div className="w-full text-lg text-center text-[#FFF7E1] font-title font-normal mb-8">
             {teamDescription}
           </div>
         )}
 
         {!isMobile && (
-          <div className="text-3xl md:text-5xl text-center text-white font-urbanist mb-4">
+          <div className="text-3xl md:text-5xl text-center text-white font-title mb-4">
             Members
           </div>
         )}
@@ -79,7 +79,7 @@ const TeamPageComponent = ({
         </div>
 
         {/* Timeline Title */}
-        <h2 className="text-center text-3xl md:text-5xl font-urbanist font-normal text-white mb-8">
+        <h2 className="text-center text-3xl md:text-5xl font-title font-normal text-white mb-8">
           Our Internship Timeline
         </h2>
 

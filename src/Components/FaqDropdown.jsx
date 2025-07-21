@@ -12,7 +12,7 @@ const FaqDropdown = ({ title = "Category", questions = [] }) => {
         onClick={() => setOpen(!open)}
         className="w-full flex justify-between items-center px-[44px] py-[11px] h-[61px]"
       >
-        <span className="font-instrument text-[32px] leading-[39px] text-white">
+        <span className="font-body text-[32px] leading-[39px] text-white">
           {title}
         </span>
         {open ? (

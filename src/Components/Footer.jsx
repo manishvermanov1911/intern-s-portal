@@ -28,12 +28,12 @@ export default function Footer() {
       <div className="max-w-6xl px-4 mx-auto flex flex-row items-stretch justify-between overflow-hidden">
         {/* Left: ACS INTERNS 2025 */}
         <div className="flex flex-col justify-center items-start min-w-0 flex-0 md:flex-1">
-          <span className="font-urbanist text-2xl md:text-7xl break-words">
+          <span className="font-title text-2xl md:text-7xl break-words">
             ACS
             <br />
             INTERNS
           </span>
-          <span className="font-urbanist text-2xl md:text-7xl font-bold text-[#ff2a00]">
+          <span className="font-title text-2xl md:text-7xl font-bold text-[#ff2a00]">
             2025
           </span>
         </div>
@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="flex flex-row items-center justify-between gap-0">
           {/* Center: Navigation */}
           <div className="flex flex-row items-center justify-center min-w-0 gap-3 md:gap-10 flex-1 md:flex-0 md:mr-6">
-            <span className="[writing-mode:vertical-lr] rotate-180 text-3xl md:text-4xl font-urbanist writing-mode-vertical text-[#FFFFFF]/60 select-none whitespace-nowrap">
+            <span className="[writing-mode:vertical-lr] rotate-180 text-3xl md:text-4xl font-title writing-mode-vertical text-[#FFFFFF]/60 select-none whitespace-nowrap">
               NAVIGATION
             </span>
             <div className="flex flex-col gap-2 md:gap-4 items-start min-w-0">

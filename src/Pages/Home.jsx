@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col items-center mt-32">
       <div>
-        <h1 className="font-title text-6xl md:text-9xl font-urbanist text-white/80 font-normal leading-none mb-24">
+        <h1 className="font-title text-6xl md:text-9xl font-title text-white/80 font-normal leading-none mb-24">
           Intern <br></br>Portal
         </h1>
       </div>
@@ -69,29 +69,29 @@ export default function Home() {
         <div className="grid grid-cols-2 grid-rows-2 gap-0 w-[90vw] max-w-[400px] mx-auto mt-8 overflow-hidden rounded-3xl mb-8">
           {/* 1 */}
           <div className="flex flex-col justify-center items-center bg-[#FFF7E1] text-[#ff0000] px-4 py-8 rounded-tl-3xl">
-            <div className="text-5xl font-urbanist text-center">1</div>
-            <div className="text-xs font-bold font-urbanist text-center mt-2">
+            <div className="text-5xl font-title text-center">1</div>
+            <div className="text-xs font-bold font-title text-center mt-2">
               Create the future.
             </div>
           </div>
           {/* 2 */}
           <div className="flex flex-col justify-center items-center bg-[#FF7B70] text-[#FFF7E1] px-4 py-8 rounded-tr-3xl">
-            <div className="text-5xl font-urbanist text-center">2</div>
-            <div className="text-xs font-bold font-urbanist text-center mt-2">
+            <div className="text-5xl font-title text-center">2</div>
+            <div className="text-xs font-bold font-title text-center mt-2">
               Own the outcome.
             </div>
           </div>
           {/* 3 */}
           <div className="flex flex-col justify-center items-center bg-[#ff0000] text-[#FFF7E1] px-4 py-8 rounded-bl-3xl">
-            <div className="text-5xl font-urbanist text-center">3</div>
-            <div className="text-xs font-bold font-urbanist text-center mt-2">
+            <div className="text-5xl font-title text-center">3</div>
+            <div className="text-xs font-bold font-title text-center mt-2">
               Raise the bar.
             </div>
           </div>
           {/* 4 */}
           <div className="flex flex-col justify-center items-center bg-[#cc0000] text-[#FFF7E1] px-4 py-8 rounded-br-3xl">
-            <div className="text-5xl font-urbanist text-center">4</div>
-            <div className="text-xs font-bold font-urbanist text-center mt-2">
+            <div className="text-5xl font-title text-center">4</div>
+            <div className="text-xs font-bold font-title text-center mt-2">
               Be genuine.
             </div>
           </div>
@@ -102,28 +102,28 @@ export default function Home() {
             className={`h-full flex flex-row justify-center items-stretch rounded-3xl bg-[#FFF7E1] text-[#ff0000]`}
           >
             <div className="min-h-full px-8 py-6 lg:px-16 lg:py-12 text-center flex flex-col justify-center items-center w-40 lg:w-64">
-              <div className="text-9xl font-urbanist text-center">1</div>
-              <div className="text-sm font-medium text-center font-bold font-urbanist">
+              <div className="text-9xl font-title text-center">1</div>
+              <div className="text-sm font-medium text-center font-bold font-title">
                 Create the future.
               </div>
             </div>
             <div className="min-h-full text-center flex-row flex justify-center items-stretch bg-[#FF0000]/50 text-[#FFF7E1] rounded-3xl">
               <div className="min-h-full px-8 py-6 lg:px-16 lg:py-12 text-center flex flex-col justify-center items-center w-40 lg:w-64">
-                <div className="text-9xl font-urbanist text-center">2</div>
-                <div className="text-sm font-medium text-center font-bold font-urbanist">
+                <div className="text-9xl font-title text-center">2</div>
+                <div className="text-sm font-medium text-center font-bold font-title">
                   Own the outcome.
                 </div>
               </div>
               <div className="min-h-full text-center flex-row flex justify-center items-stretch bg-[#ff0000] text-[#FFF7E1] rounded-3xl">
                 <div className="min-h-full px-8 py-6 lg:px-16 lg:py-12 text-center flex flex-col justify-center items-center w-40 lg:w-64">
-                  <div className="text-9xl font-urbanist text-center">3</div>
-                  <div className="text-sm font-medium text-center font-bold font-urbanist">
+                  <div className="text-9xl font-title text-center">3</div>
+                  <div className="text-sm font-medium text-center font-bold font-title">
                     Raise the bar.
                   </div>
                 </div>
                 <div className="min-h-full px-8 py-6 lg:px-16 lg:py-12 text-center flex flex-col justify-center items-center bg-[#cc0000] text-[#FFF7E1] rounded-3xl w-40 lg:w-64">
-                  <div className="text-9xl font-urbanist text-center">4</div>
-                  <div className="text-sm font-medium text-center font-bold font-urbanist">
+                  <div className="text-9xl font-title text-center">4</div>
+                  <div className="text-sm font-medium text-center font-bold font-title">
                     Be genuine.
                   </div>
                 </div>
