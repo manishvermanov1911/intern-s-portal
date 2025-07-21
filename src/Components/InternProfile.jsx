@@ -64,26 +64,28 @@ const InternProfilePage = ({ interns }) => {
           )}
 
           {/* Desktop Socials */}
-          <div className="flex space-x-[49px] w-fit mt-[48px] h-[80px] px-[22px] py-[21px] rounded-[32px] bg-white/20">
-            {intern.git_link ? (
-              <a
-                href={intern.git_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="text-white w-[35px] h-[35px] hover:text-white/60" />
-              </a>
-            ) : null}
-            {intern.linkedin_link ? (
-              <a
-                href={intern.linkedin_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn className="text-white w-[35px] h-[35px] hover:text-white/60" />
-              </a>
-            ) : null}
-          </div>
+          {intern.git_link || intern.linkedin_link ? (
+            <div className="flex space-x-[49px] w-fit mt-[48px] h-[80px] px-[22px] py-[21px] rounded-[32px] bg-white/20">
+              {intern.git_link ? (
+                <a
+                  href={intern.git_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-white w-[35px] h-[35px] hover:text-white/60" />
+                </a>
+              ) : null}
+              {intern.linkedin_link ? (
+                <a
+                  href={intern.linkedin_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="text-white w-[35px] h-[35px] hover:text-white/60" />
+                </a>
+              ) : null}
+            </div>
+          ) : null}
         </div>
 
         {/* Right Image - responsive placement */}
@@ -109,36 +111,30 @@ const InternProfilePage = ({ interns }) => {
               {intern.about_yourself}
             </p>
           )}
-          <div className="flex justify-center space-x-6 mt-6 w-[80%] mx-auto py-4 rounded-[32px] bg-white/20">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="text-white w-7 h-7" />
-            </a>
-            <a
-              href="https://www.gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MdOutlineMail className="text-white w-7 h-7" />
-            </a>
-            <a
-              href="https://www.github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="text-white w-7 h-7" />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn className="text-white w-7 h-7" />
-            </a>
-          </div>
+          {intern.git_link || intern.linkedin_link ? (
+            <div className="flex justify-center space-x-6 mt-6 w-fit px-4 mx-auto py-4 rounded-[32px] bg-white/20">
+              {intern.git_link ? (
+                <a
+                  href={intern.git_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-white/60"
+                >
+                  <FaGithub className="text-white w-7 h-7" />
+                </a>
+              ) : null}
+              {intern.linkedin_link ? (
+                <a
+                  href={intern.linkedin_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-white/60"
+                >
+                  <FaLinkedinIn className="text-white w-7 h-7" />
+                </a>
+              ) : null}
+            </div>
+          ) : null}
         </div>
       </div>
 
