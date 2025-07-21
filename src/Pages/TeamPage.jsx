@@ -1,22 +1,46 @@
 import TeamPageD from "../Components/TeamPageD";
 import TeamPageM from "../Components/TeamPageM";
 import useIsMobile from "../Components/useIsMobile";
-import teamData from "../Data/team";
-export const TeamPage = ({ team = "UI" }) => {
+import { useParams } from "react-router-dom";
+
+import teamTimelineInfo from "../Data/teamTimelineInfo.json";
+
+export const TeamPage = ({ interns }) => {
+  const params = useParams();
   const isMobile = useIsMobile();
-  const teamInfo = teamData[team] || {};
+
+  // params.name is one of ["Workfront", "AEM", "Data", "UI", "UX", "CJM"]
+
+  const teamName = params.name;
+  if (
+    !teamName ||
+    !["workfront", "aem", "data", "ui", "ux", "cjm"].includes(teamName)
+  ) {
+    // TODO: return 404 page
+    return <div className="text-white p-10">Team not found.</div>;
+  }
+  const paramToProperCase = {
+    workfront: "Workfront",
+    aem: "AEM",
+    data: "Data",
+    ui: "UI",
+    ux: "UX",
+    cjm: "CJM",
+  };
+  const team = paramToProperCase[teamName.toLowerCase()];
+  const teamData = interns.filter((intern) => intern.competency === team);
 
   return isMobile ? (
     <TeamPageM
       team={team}
-      teamMembers={teamInfo.teamMembers}
-      timelineData={teamInfo.timelineDataMobile}
+      teamMembers={teamData}
+      timelineData={teamTimelineInfo[team].mobile}
     />
   ) : (
     <TeamPageD
       team={team}
-      teamMembers={teamInfo.teamMembers}
-      timelineData={teamInfo.timelineDataDesktop}
+      teamMembers={teamData}
+      timelineData={teamTimelineInfo[team].desktop}
     />
   );
 };

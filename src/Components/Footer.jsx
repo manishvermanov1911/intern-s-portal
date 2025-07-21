@@ -1,17 +1,27 @@
 import React from "react";
 
 const navLinks = [
-  { name: "Home", href: "#" },
-  { name: "Gallery", href: "#" },
-  { name: "Journal", href: "#" },
-  { name: "Teams", href: "#" },
-  { name: "FAQs", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Teams", href: "/teams" },
+  { name: "Journal", href: "/journal" },
+  { name: "FAQs", href: "/faqs" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 const creators = [
-  "@Pranjalr", "@Harshithas", "@Snehadange", "@ArshitTiwari",
-  "@Piyush", "@Priya", "@SaumyaD", "@BhavyaH",
-  "@ManishV", "@AmanS", "@YajvinR", "@Shruti",
+  ["@pranjalr", "https://url.to/pranjalr"],
+  ["@priyanshu", "https://url.to/priyanshu"],
+  ["@harshithas", "https://url.to/harshithas"],
+  ["@snehadange", "https://url.to/snehadange"],
+  ["@arshittiwari", "https://url.to/arshittiwari"],
+  ["@piyush", "https://url.to/piyush"],
+  ["@priya", "https://url.to/priya"],
+  ["@saumyad", "https://url.to/saumyad"],
+  ["@bhavyah", "https://url.to/bhavyah"],
+  ["@manishv", "https://url.to/manishv"],
+  ["@amans", "https://url.to/amans"],
+  ["@yajvinr", "https://url.to/yajvinr"],
+  ["@shruti", "https://url.to/shruti"],
 ];
 
 export default function Footer() {
@@ -34,11 +44,12 @@ export default function Footer() {
 
       <footer className="w-full bg-[#1a1a1a] rounded-t-3xl px-4 sm:px-8 py-12 mt-16 text-white overflow-hidden">
         <div className="max-w-screen-xl w-full mx-auto flex flex-col md:flex-row items-stretch justify-between gap-8 md:gap-0">
-
           {/* Left: ACS INTERNS 2025 */}
           <div className="flex flex-col justify-center items-start min-w-0 flex-1 pl-8 sm:pl-16">
             <span className="text-5xl sm:text-6xl md:text-7xl font-light leading-tight break-words">
-              ACS<br />INTERNS
+              ACS
+              <br />
+              INTERNS
             </span>
             <span className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff2a00] mt-2">
               2025
@@ -75,10 +86,10 @@ export default function Footer() {
                 {leftCreators.map((creator, idx) => (
                   <a
                     key={idx}
-                    href="#"
+                    href={creator[1]}
                     className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
                   >
-                    {creator}
+                    {creator[0]}
                   </a>
                 ))}
               </div>
@@ -86,10 +97,10 @@ export default function Footer() {
                 {rightCreators.map((creator, idx) => (
                   <a
                     key={idx + 8}
-                    href="#"
+                    href={creator[1]}
                     className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
                   >
-                    {creator}
+                    {creator[0]}
                   </a>
                 ))}
               </div>

@@ -3,13 +3,12 @@ import React from 'react';
 import TeamCard from '../components/TeamCard';
 
 const competencies = [
-  { title: 'AEM', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'UI', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'Data', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'CJM', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'Content', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'UX', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
-  { title: 'Workfront', description: 'Hot Pink. Cat, don’t like people. I like myself though.' },
+  { title: 'AEM', description: "Hot Pink. Cat, don't like people. I like myself though." },
+  { title: 'UI', description: "Hot Pink. Cat, don't like people. I like myself though." },
+  { title: 'Data', description: "Hot Pink. Cat, don't like people. I like myself though." },
+  { title: 'CJM', description: "Hot Pink. Cat, don't like people. I like myself though." },
+  { title: 'UX', description: "Hot Pink. Cat, don't like people. I like myself though." },
+  { title: 'Workfront', description: "Hot Pink. Cat, don't like people. I like myself though." },
 ];
 
 export default function Teams() {
