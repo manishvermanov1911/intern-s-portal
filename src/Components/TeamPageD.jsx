@@ -42,36 +42,25 @@ const TeamPageD = ({ team, teamMembers, timelineImage, teamDescription }) => {
     <div className="min-w-screen min-h-screen bg-black text-white">
       <div className="max-w-6xl mx-auto min-h-screen flex flex-col items-center px-4 py-8">
         {/* Breadcrumb */}
-        <div className="w-full flex items-center mt-24 mb-8 gap-4">
+        <div className="w-full flex items-center mt-24 mb-8 gap-2">
           {/* Red Pill */}
           <a
             href="/teams"
             className="w-24 h-10 bg-[#FF0000] hover:bg-[#cc0000] rounded-3xl flex items-center justify-center gap-2 transition"
           >
             <img src={testArrow} alt="<" />
-            <span className="font-body text-white text-sm">
-              Teams
-            </span>
+            <span className="font-body text-white text-sm">Teams</span>
           </a>
-
           {/* Breadcrumb text */}
-          <div className="h-[24px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]">
-            <span className="mr-1">/</span>
-            <span className="text-red-500">{team}</span>
-          </div>
+          <span className="text-lg font-base text-[#FFF7E1]">/</span>
+          <span className="text-[#FF0000]">{team}</span>
         </div>
 
         {/* Team Title */}
-        <div className="hidden md:block w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal mb-6">
+        <div className="text-5xl md:text-7xl text-center text-[#FF0000] font-urbanist font-normal mb-4">
           {team}
         </div>
-
-        <div className="md:hidden w-[223px] h-[49px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans] mb-6">
-          {team} Members
-        </div>
-
-        {/* Subtext */}
-        <div className="w-full max-w-[840px] text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
+        <div className="w-full max-w-[840px] text-lg leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
           {teamDescription}
         </div>
 
@@ -81,7 +70,7 @@ const TeamPageD = ({ team, teamMembers, timelineImage, teamDescription }) => {
 
         <div className="w-full max-w-[840px] text-center font-normal font-urbanist text-[14px] leading-[17px] text-white md:text-[16px] md:leading-[19px] md:text-[#FFF7E1] mb-12">
           View profiles and bios! Learn more about what we do as{" "}
-          <span className="font-bold text-red-600">#AdobeInterns!</span>
+          <span className="font-bold text-[#FF0000]">#AdobeInterns!</span>
         </div>
 
         {/* Cards */}

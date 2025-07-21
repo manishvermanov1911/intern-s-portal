@@ -1,13 +1,10 @@
 import TeamPageD from "../Components/TeamPageD";
-import TeamPageM from "../Components/TeamPageM";
-import useIsMobile from "../Components/useIsMobile";
 import { useParams } from "react-router-dom";
 
 import teamTimelineInfo from "../Data/teamTimelineInfo.json";
 
 export const TeamPage = ({ interns }) => {
   const params = useParams();
-  const isMobile = useIsMobile();
 
   // params.name is one of ["Workfront", "AEM", "Data", "UI", "UX", "CJM"]
 
@@ -30,14 +27,7 @@ export const TeamPage = ({ interns }) => {
   const team = paramToProperCase[teamName.toLowerCase()];
   const teamData = interns.filter((intern) => intern.competency === team);
 
-  return isMobile ? (
-    <TeamPageM
-      team={team}
-      teamMembers={teamData}
-      timelineImage={teamTimelineInfo[team].mobile}
-      teamDescription={teamTimelineInfo[team].description}
-    />
-  ) : (
+  return (
     <TeamPageD
       team={team}
       teamMembers={teamData}
