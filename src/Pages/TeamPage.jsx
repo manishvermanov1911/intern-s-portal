@@ -34,13 +34,13 @@ export const TeamPage = ({ interns }) => {
     <TeamPageM
       team={team}
       teamMembers={teamData}
-      timelineData={teamTimelineInfo[team].mobile}
+      timelineImage={teamTimelineInfo[team].mobile}
     />
   ) : (
     <TeamPageD
       team={team}
       teamMembers={teamData}
-      timelineData={teamTimelineInfo[team].desktop}
+      timelineImage={teamTimelineInfo[team].desktop}
     />
   );
 };

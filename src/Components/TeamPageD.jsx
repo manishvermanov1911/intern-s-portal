@@ -1,11 +1,10 @@
 import React from "react";
-import JourneyTimeline from "./JourneyTimeline";
 import testArrow from "../assets/testarrow.svg";
 
-const TeamPageD = ({ team, teamMembers, timelineData }) => {
+const TeamPageD = ({ team, teamMembers, timelineImage }) => {
   const members = teamMembers;
 
-  const TeamCard = ({ name, image, bio }) => (
+  const TeamCard = ({ name, image, bio, profileLink }) => (
     <div className="relative w-[365px] h-[273px] bg-white/10 rounded-[32px] overflow-hidden">
       {/* Left image */}
       <div className="absolute left-0 top-[0.5px] w-[182px] h-[279px]">
@@ -19,7 +18,7 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
 
       {/* Bio */}
       <p
-        className="absolute w-[153px] h-[72px] text-[14px] leading-[18px] font-normal text-[#FFF7E1] font-adobe"
+        className="absolute w-[153px] h-[72px] text-[14px] leading-[18px] font-normal text-[#FFF7E1] font-instrument overflow-hidden line-clamp-4"
         style={{
           left: `calc(50% - 76.5px + 92px)`,
           top: `calc(50% - 36px - 14.5px)`,
@@ -28,26 +27,31 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
         {bio}
       </p>
 
-      {/* View Profile Button */}
-      <div className="absolute left-[241px] top-[209px] w-[108px] h-[40px] bg-[rgba(255,0,0,0.16)] rounded-[20px] flex justify-center items-center px-[15px] py-[10px]">
+      <a
+        href={profileLink}
+        className="absolute left-[241px] top-[209px] w-[108px] h-[40px] bg-[rgba(255,0,0,0.16)] rounded-[20px] flex justify-center items-center px-[15px] py-[10px] no-underline"
+      >
         <span className="w-[108px] h-[20px] text-[14px] leading-[20px]  text-[#FFF7E1] font-[Adobe_Clean] font-normal text-center">
           View Profile
         </span>
-      </div>
+      </a>
     </div>
   );
 
   return (
-    <div className="w-full min-h-screen bg-black flex flex-col items-center px-4 py-8">
+    <div className="max-w-6xl mx-auto min-h-screen bg-black flex flex-col items-center px-4 py-8">
       {/* Breadcrumb */}
       <div className="w-full max-w-[1160px] flex items-center gap-[12px] mt-[172px] mb-8">
         {/* Red Pill */}
-        <div className="w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[10px] p-[10px]">
+        <a
+          href="/teams"
+          className="w-[114px] h-[40px] bg-[#FF0000] hover:bg-[#cc0000] rounded-full flex items-center justify-center gap-[10px] p-[10px] no-underline"
+        >
           <img src={testArrow} alt="Arrow" />
           <span className="text-white text-[16px] leading-[20px] font-normal">
             Teams
           </span>
-        </div>
+        </a>
 
         {/* Breadcrumb text */}
         <div className="h-[24px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]">
@@ -86,8 +90,9 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
             <TeamCard
               key={i}
               name={member.name}
-              image={member.image}
-              bio={member.bio}
+              image={member.photo}
+              bio={member.about_yourself}
+              profileLink={`/intern/${member.employee_id - 1}`}
             />
           ))}
         </div>
@@ -96,8 +101,9 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
             <TeamCard
               key={i + 3}
               name={member.name}
-              image={member.image}
-              bio={member.bio}
+              image={member.photo}
+              bio={member.about_yourself}
+              profileLink={`/intern/${member.employee_id - 1}`}
             />
           ))}
         </div>
@@ -109,7 +115,11 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
       </h2>
 
       {/* Timeline Component */}
-      {/* TODO: IMAGE */}
+      <img
+        src={timelineImage}
+        alt={`${team} Timeline`}
+        className="w-full mt-4"
+      />
     </div>
   );
 };

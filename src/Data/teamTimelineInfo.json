@@ -1,154 +1,26 @@
 {
   "Workfront": {
-    "desktop": [
-      {
-        "label": "Week 1",
-        "desc": "Content research",
-        "top": "120px",
-        "left": "58px"
-      },
-      {
-        "label": "Week 2",
-        "desc": "Voice & tone guidelines",
-        "top": "120px",
-        "left": "295px"
-      },
-      {
-        "label": "Week 3",
-        "desc": "Writing landing copy",
-        "top": "120px",
-        "left": "530px"
-      },
-      {
-        "label": "Week 4",
-        "desc": "Review with branding",
-        "top": "116px",
-        "left": "765px"
-      },
-      {
-        "label": "Week 5",
-        "desc": "First blog drafts",
-        "top": "120px",
-        "left": "1004px"
-      },
-      {
-        "label": "Week 6",
-        "desc": "Editing & SEO polish",
-        "top": "410px",
-        "left": "1004px"
-      },
-      {
-        "label": "Week 7",
-        "desc": "Internal publishing prep",
-        "top": "410px",
-        "left": "767px"
-      },
-      {
-        "label": "Week 8",
-        "desc": "Final approval round",
-        "top": "406px",
-        "left": "532px"
-      },
-      {
-        "label": "Week 9",
-        "desc": "Team retro + feedback",
-        "top": "410px",
-        "left": "295px"
-      },
-      {
-        "label": "Week 10",
-        "desc": "Case study writing",
-        "top": "410px",
-        "left": "58px"
-      }
-    ],
-    "mobile": [
-      { "week": "Week 1", "desc": "Content research", "side": "right" },
-      { "week": "Week 2", "desc": "Voice & tone guidelines", "side": "left" },
-      { "week": "Week 3", "desc": "Writing landing copy", "side": "right" },
-      { "week": "Week 4", "desc": "Review with branding", "side": "left" },
-      { "week": "Week 5", "desc": "First blog drafts", "side": "right" },
-      { "week": "Week 6", "desc": "Editing & SEO polish", "side": "left" },
-      { "week": "Week 7", "desc": "Internal publishing prep", "side": "right" },
-      { "week": "Week 8", "desc": "Final approval round", "side": "left" },
-      { "week": "Week 9", "desc": "Team retro + feedback", "side": "right" },
-      { "week": "Week 10", "desc": "Case study writing", "side": "left" }
-    ]
+    "desktop": "/timelines/workfront-desktop-timeline.png",
+    "mobile": "/timelines/workfront-mobile-timeline.png"
   },
   "UI": {
-    "desktop": [
-      {
-        "label": "Week 1",
-        "desc": "Content research",
-        "top": "120px",
-        "left": "58px"
-      },
-      {
-        "label": "Week 2",
-        "desc": "Voice & tone guidelines",
-        "top": "120px",
-        "left": "295px"
-      },
-      {
-        "label": "Week 3",
-        "desc": "Writing landing copy",
-        "top": "120px",
-        "left": "530px"
-      },
-      {
-        "label": "Week 4",
-        "desc": "Review with branding",
-        "top": "116px",
-        "left": "765px"
-      },
-      {
-        "label": "Week 5",
-        "desc": "First blog drafts",
-        "top": "120px",
-        "left": "1004px"
-      },
-      {
-        "label": "Week 6",
-        "desc": "Editing & SEO polish",
-        "top": "410px",
-        "left": "1004px"
-      },
-      {
-        "label": "Week 7",
-        "desc": "Internal publishing prep",
-        "top": "410px",
-        "left": "767px"
-      },
-      {
-        "label": "Week 8",
-        "desc": "Final approval round",
-        "top": "406px",
-        "left": "532px"
-      },
-      {
-        "label": "Week 9",
-        "desc": "Team retro + feedback",
-        "top": "410px",
-        "left": "295px"
-      },
-      {
-        "label": "Week 10",
-        "desc": "Case study writing",
-        "top": "410px",
-        "left": "58px"
-      }
-    ],
-    "mobile": [
-      { "week": "Week 1", "desc": "Content research", "side": "right" },
-      { "week": "Week 2", "desc": "Voice & tone guidelines", "side": "left" },
-      { "week": "Week 3", "desc": "Writing landing copy", "side": "right" },
-      { "week": "Week 4", "desc": "Review with branding", "side": "left" },
-      { "week": "Week 5", "desc": "First blog drafts", "side": "right" },
-      { "week": "Week 6", "desc": "Editing & SEO polish", "side": "left" },
-      { "week": "Week 7", "desc": "Internal publishing prep", "side": "right" },
-      { "week": "Week 8", "desc": "Final approval round", "side": "left" },
-      { "week": "Week 9", "desc": "Team retro + feedback", "side": "right" },
-      { "week": "Week 10", "desc": "Case study writing", "side": "left" }
-    ]
+    "desktop": "/timelines/ui-desktop-timeline.png",
+    "mobile": "/timelines/ui-mobile-timeline.png"
+  },
+  "UX": {
+    "desktop": "/timelines/ux-desktop-timeline.png",
+    "mobile": "/timelines/ux-mobile-timeline.png"
+  },
+  "Data": {
+    "desktop": "/timelines/data-desktop-timeline.png",
+    "mobile": "/timelines/data-mobile-timeline.png"
+  },
+  "CJM": {
+    "desktop": "/timelines/cjm-desktop-timeline.png",
+    "mobile": "/timelines/cjm-mobile-timeline.png"
+  },
+  "AEM": {
+    "desktop": "/timelines/aem-desktop-timeline.png",
+    "mobile": "/timelines/aem-mobile-timeline.png"
   }
 }

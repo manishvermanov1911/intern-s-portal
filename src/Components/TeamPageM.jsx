@@ -1,8 +1,7 @@
 import React from "react";
 import { FaChevronLeft } from "react-icons/fa";
-import MobileJourneyTimeline from "./MobileJourneyTimeline";
 
-const TeamPageM = ({ team, teamMembers, timelineData }) => {
+const TeamPageM = ({ team, teamMembers, timelineImage }) => {
   {
     /* Timeline */
   }
@@ -78,7 +77,11 @@ const TeamPageM = ({ team, teamMembers, timelineData }) => {
         </p>
       </div>
 
-      {/* TODO: IMAGE */}
+      <img
+        src={timelineImage}
+        alt={`${team} Timeline`}
+        className="w-full mt-4"
+      />
     </div>
   );
 };
