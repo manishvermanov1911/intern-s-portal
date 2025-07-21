@@ -3,7 +3,6 @@ import React from "react";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Teams", href: "/teams" },
-  // { name: "Journal", href: "/journal" },
   { name: "FAQs", href: "/faqs" },
   { name: "Gallery", href: "/gallery" },
 ];
@@ -48,7 +47,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2 md:gap-4 items-start min-w-0">
               {navLinks.map((link, idx) => (
                 <a
-                  key={link.name}
+                  key={idx}
                   href={link.href}
                   className={`text-sm md:text-base text-white hover:underline hover:text-[#FF0000] whitespace-nowrap`}
                 >

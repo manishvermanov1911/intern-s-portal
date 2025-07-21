@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "../styles/gallery.css";
-
+// Import images
 import red from "../assets/gallery/red.png";
 import a1 from "../assets/gallery/a1.jpg";
 import a2 from "../assets/gallery/a2.jpg";
@@ -113,6 +113,7 @@ const images = [
   { src: red, label: "Events" },
   { src: a22 },
   { src: e1 },
+  { src: e2 },
   { src: e3 },
   { src: e4 },
   { src: e5 },
@@ -183,10 +184,10 @@ const Gallery = () => {
 
   return (
     <div className="max-w-6xl px-4 mx-auto">
-      <div className="gallery-page mt-24">
+      <div className="gallery-page mt-32">
         <header className="gallery-header mb-8">
-          <h1>Gallery</h1>
-          <p>A home for our memories.</p>
+          <h1 className="text-5xl md:text-7xl mb-3 text-[#FFF7E1] font-title text-center">Gallery</h1>
+          <p className="text-sm md:text-lg text-[#FFF7E1] mb-12 font-body text-center">A home for our memories.</p>
         </header>
 
         <div className="gallery-grid">

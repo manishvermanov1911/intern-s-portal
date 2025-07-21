@@ -60,7 +60,7 @@ const TeamPageD = ({ team, teamMembers, timelineImage, teamDescription }) => {
         <div className="text-5xl md:text-7xl text-center text-[#FF0000] font-urbanist font-normal mb-4">
           {team}
         </div>
-        <div className="w-full max-w-[840px] text-lg leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
+        <div className="w-full text-lg text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
           {teamDescription}
         </div>
 
