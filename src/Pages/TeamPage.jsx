@@ -13,7 +13,6 @@ export const TeamPage = ({ interns }) => {
     !teamName ||
     !["workfront", "aem", "data", "ui", "ux", "cjm"].includes(teamName)
   ) {
-    // TODO: return 404 page
     return <div className="text-white p-10">Team not found.</div>;
   }
   const paramToProperCase = {
