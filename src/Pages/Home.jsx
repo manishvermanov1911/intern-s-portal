@@ -141,7 +141,7 @@ export default function Home() {
         Our team - ACS!
       </div>
 
-      <p className=" text-[14px] md:text-[16px] text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
+      <p className="max-w-sm md:max-w-2xl text-base md:text-[16px] text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
         This internship portal contains information about all the projects that
         interns have worked on this summer, the events like Adobe Alchemy,
         connecting with leaders, and much more. Get a glimpse into intern life
@@ -150,7 +150,7 @@ export default function Home() {
 
       {/* flow chart here */}
 
-      <p className=" text-[14px] md:text-[16px] mb-8 text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
+      <p className="max-w-sm md:max-w-2xl text-base md:text-[16px] mb-8 text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
         Read more about the team, or see more pictures, by clicking the buttons
         below!
       </p>
