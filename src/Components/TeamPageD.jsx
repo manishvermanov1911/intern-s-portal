@@ -38,10 +38,9 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
   );
 
   return (
-    <div className="w-full min-h-screen bg-black">
-      {/* Page content here */}
+    <div className="w-full min-h-screen bg-black flex flex-col items-center px-4 py-8">
       {/* Breadcrumb */}
-      <div className="absolute top-[180px] left-[calc(50%-580px)] flex items-center gap-[12px]">
+      <div className="w-full max-w-[1160px] flex items-center gap-[12px] mt-[172px] mb-8">
         {/* Red Pill */}
         <div className="w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[10px] p-[10px]">
           <img src={testArrow} alt="Arrow" />
@@ -58,35 +57,31 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
       </div>
 
       {/* Team Title */}
-      <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-[220px] w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal">
+      <div className="hidden md:block w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal mb-6">
         {team}
       </div>
 
-      <div className="md:hidden absolute w-[223px] h-[49px] left-1/2 -translate-x-1/2 top-[144px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans]">
+      <div className="md:hidden w-[223px] h-[49px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans] mb-6">
         {team} Members
       </div>
 
       {/* Subtext */}
-      <div className="absolute w-[840px] h-[22px] left-1/2 top-[368px] -translate-x-1/2 text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal">
+      <div className="w-full max-w-[840px] text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
         We progress by Reacting to demands, beautifully.
       </div>
 
-      <div className="absolute w-[904px] h-[53px] left-1/2 -translate-x-[calc(904px/2+8px)] top-[465px] text-[48px] leading-[110.58%] text-center text-white font-urbanist">
+      <div className="w-full max-w-[904px] text-[48px] leading-[110.58%] text-center text-white font-urbanist mb-4">
         Members
       </div>
 
-      <div
-        className="absolute left-1/2 top-[217px] -translate-x-1/2 w-[400px] h-[34px] text-center 
-             font-normal font-urbanist text-[14px] leading-[17px] text-white 
-             md:top-[534px] md:w-[840px] md:h-[19px] md:text-[16px] md:leading-[19px] md:text-[#FFF7E1]"
-      >
+      <div className="w-full max-w-[840px] text-center font-normal font-urbanist text-[14px] leading-[17px] text-white md:text-[16px] md:leading-[19px] md:text-[#FFF7E1] mb-12">
         View profiles and bios! Learn more about what we do as{" "}
         <span className="font-bold text-red-600">#AdobeInterns!</span>
       </div>
 
       {/* Cards */}
-      <div className="flex flex-col gap-[32px] items-center absolute top-[613px] left-1/2 -translate-x-1/2">
-        <div className="flex gap-[32px]">
+      <div className="flex flex-col gap-[32px] items-center mb-16">
+        <div className="flex gap-[32px] flex-wrap justify-center">
           {members.slice(0, 3).map((member, i) => (
             <TeamCard
               key={i}
@@ -96,7 +91,7 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
             />
           ))}
         </div>
-        <div className="flex gap-[32px]">
+        <div className="flex gap-[32px] flex-wrap justify-center">
           {members.slice(3, 6).map((member, i) => (
             <TeamCard
               key={i + 3}
@@ -109,12 +104,12 @@ const TeamPageD = ({ team, teamMembers, timelineData }) => {
       </div>
 
       {/* Timeline Title */}
-      <h2 className="absolute top-[1319px] left-1/2 -translate-x-[241.5px] w-[500px] h-[58px] text-center text-[48px] leading-[58px] font-urbanist font-normal text-white">
+      <h2 className="w-[500px] h-[58px] text-center text-[48px] leading-[58px] font-urbanist font-normal text-white mb-8">
         Our Internship Timeline
       </h2>
 
       {/* Timeline Component */}
-      <JourneyTimeline timelineData={timelineData} />
+      {/* TODO: IMAGE */}
     </div>
   );
 };

@@ -78,9 +78,7 @@ const TeamPageM = ({ team, teamMembers, timelineData }) => {
         </p>
       </div>
 
-      <MobileJourneyTimeline
-        timelineItems={teamData[team].timelineDataMobile}
-      />
+      {/* TODO: IMAGE */}
     </div>
   );
 };
