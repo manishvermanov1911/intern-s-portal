@@ -1,7 +1,8 @@
-import TeamPageD from "../Components/TeamPageD";
+import TeamPageComponent from "../Components/TeamPageComponent";
 import { useParams } from "react-router-dom";
 
 import teamTimelineInfo from "../Data/teamTimelineInfo.json";
+import NotFound from "./NotFound";
 
 export const TeamPage = ({ interns }) => {
   const params = useParams();
@@ -13,7 +14,7 @@ export const TeamPage = ({ interns }) => {
     !teamName ||
     !["workfront", "aem", "data", "ui", "ux", "cjm"].includes(teamName)
   ) {
-    return <div className="text-white p-10">Team not found.</div>;
+    return <NotFound />;
   }
   const paramToProperCase = {
     workfront: "Workfront",
@@ -27,7 +28,7 @@ export const TeamPage = ({ interns }) => {
   const teamData = interns.filter((intern) => intern.competency === team);
 
   return (
-    <TeamPageD
+    <TeamPageComponent
       team={team}
       teamMembers={teamData}
       timelineImage={teamTimelineInfo[team].desktop}

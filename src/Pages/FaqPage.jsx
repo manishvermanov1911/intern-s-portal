@@ -8,7 +8,7 @@ const items = [
     label: "Do",
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat totam id et, necessitatibus neque modi quibusdam facilis mollitia harum? Eveniet quaerat libero harum beatae. Cupiditate odit deserunt nulla adipisci.",
   },
-  { label: "Don't", text: "Don’t share personal info with strangers." },
+  { label: "Don't", text: "Don't share personal info with strangers." },
   { label: "Do", text: "Check-in with your mentor weekly." },
   { label: "Don't", text: "Don't skip daily standups." },
   { label: "Do", text: "Celebrate small wins — they matter!" },
@@ -19,7 +19,7 @@ const items = [
   { label: "Don't", text: "Don't hoard information, share it." },
   {
     label: "Don't",
-    text: "Don’t pretend to know everything. Asking questions makes you look smart, not clueless.",
+    text: "Don't pretend to know everything. Asking questions makes you look smart, not clueless.",
   },
 ];
 
@@ -82,7 +82,7 @@ const Frame128Wrapper = () => (
           <DontCard key={index} text={item.text} />
         ) : (
           <DoCard key={index} text={item.text} />
-        ),
+        )
       )}
     </div>
   </div>
