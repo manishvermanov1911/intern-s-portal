@@ -9,19 +9,19 @@ const navLinks = [
 ];
 
 const creators = [
-  ["@pranjalr", "https://url.to/pranjalr"],
-  ["@priyanshu", "https://url.to/priyanshu"],
+  ["@pranjalr", "https://linkedin.com/in/pranjal-rastogi-pjr"],
+ 
   ["@harshithas", "https://url.to/harshithas"],
-  ["@snehadange", "https://url.to/snehadange"],
-  ["@arshittiwari", "https://url.to/arshittiwari"],
-  ["@piyush", "https://url.to/piyush"],
-  ["@priya", "https://url.to/priya"],
-  ["@saumyad", "https://url.to/saumyad"],
-  ["@bhavyah", "https://url.to/bhavyah"],
-  ["@manishv", "https://url.to/manishv"],
-  ["@amans", "https://url.to/amans"],
-  ["@yajvinr", "https://url.to/yajvinr"],
-  ["@shruti", "https://url.to/shruti"],
+  ["@snehadange", "www.linkedin.com/in/sneha-dange-2002021b8"],
+  ["@arshitt", "https://www.linkedin.com/in/arshit-tiwari/"],
+  ["@piyushpatel", "https://www.linkedin.com/in/piyush-patel-03236b250/"],
+  ["@priyasing", "https://www.linkedin.com/in/priya-singh-8a2050216/"],
+  ["@saumyad", "www.linkedin.com/in/dwivedisaumya"],
+  ["@bharlalka", "https://www.linkedin.com/in/bhavya-harlalka-16774a318/"],
+  ["@manishverma", "https://url.to/manishv"],
+  ["@amansingla", "https://www.linkedin.com/in/aman-singla-7a481a160/"],
+  ["@yrautela", "https://www.linkedin.com/in/yajvin-rautela-a02142253/"],
+  ["@shchaurasia", "https://www.linkedin.com/in/shruti-chaurasia-8890bb211/"],
 ];
 
 export default function Footer() {
