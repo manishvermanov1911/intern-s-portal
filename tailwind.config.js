@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        urbanist: ['Urbanist', 'sans-serif'], // ✅ Don't use var()
-        instrument: ['Instrument Sans', 'sans-serif'],
+        title: ['Urbanist', 'sans-serif'], // ✅ Don't use var()
+        body: ['Instrument Sans', 'sans-serif'],
       },
     },
   },

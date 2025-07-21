@@ -3,10 +3,10 @@ import React from "react";
 
 export default function TeamCard({ title, description, href }) {
   return (
-    <div className="bg-[#1e1e1e] p-6 rounded-2xl shadow-md flex flex-col justify-between">
+    <div className="bg-[#FFFFFF]/10 p-6 rounded-2xl shadow-md flex flex-col justify-between items-start">
       <div>
-        <h2 className="text-2xl font-bold text-red-600 mb-2">{title}</h2>
-        <p className="text-sm text-gray-300">{description}</p>
+        <h2 className="font-title text-5xl font-bold text-red-600 mb-2 text-left">{title}</h2>
+        <p className="font-body text-sm text-[#FFF7E1] text-left">{description}</p>
       </div>
       <a
         href={href}

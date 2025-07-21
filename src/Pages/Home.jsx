@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col items-center mt-32">
       <div>
-        <h1 className="text-6xl md:text-9xl font-urbanist text-white/80 font-normal leading-none mb-20">
+        <h1 className="font-title text-6xl md:text-9xl font-urbanist text-white/80 font-normal leading-none mb-20">
           Intern <br></br>Portal
         </h1>
       </div>

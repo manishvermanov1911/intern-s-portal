@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>      {/* ✅ Wrap App with Router */}
       <Background />
       <NavBar /> {/* ✅ Include NavBar */}
-      <App />
+      <App className="font-body" />
       <Footer /> {/* ✅ Include Footer */}
     </BrowserRouter>
   </StrictMode>

@@ -10,7 +10,6 @@ const navLinks = [
 
 const creators = [
   ["@pranjalr", "https://linkedin.com/in/pranjal-rastogi-pjr"],
- 
   ["@harshithas", "https://url.to/harshithas"],
   ["@snehadange", "www.linkedin.com/in/sneha-dange-2002021b8"],
   ["@arshitt", "https://www.linkedin.com/in/arshit-tiwari/"],
@@ -29,7 +28,7 @@ export default function Footer() {
   const rightCreators = creators.slice(6, 12);
 
   return (
-    <footer className="w-full bg-[#1a1a1a] rounded-t-3xl px-4 sm:px-8 mt-2 py-12 text-white overflow-hidden">
+    <footer className="w-full bg-[#1a1a1a] rounded-t-3xl px-4 sm:px-8 mt-2 py-12 text-white">
       <div className="max-w-6xl w-full mx-auto flex flex-row items-stretch justify-between">
         {/* Left: ACS INTERNS 2025 */}
         <div className="flex flex-col justify-center items-start min-w-0 flex-1 pl-8 sm:pl-16">
