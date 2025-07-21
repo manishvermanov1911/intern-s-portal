@@ -10,7 +10,7 @@ const TeamPageM = ({ team, teamMembers, timelineData }) => {
   return (
     <div className="w-full bg-black text-white">
       {/* Header */}
-      <div className="relative px-4 py-6 flex items-center justify-between">
+      <div className="relative pt-20 px-4 py-6 flex items-center justify-between">
         <FaChevronLeft className="text-white text-xl" />
        <h1 className="text-[40px] leading-[49px] font-normal">
   {team?.toUpperCase()} Members
