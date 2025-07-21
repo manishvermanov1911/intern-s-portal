@@ -1,6 +1,7 @@
 import React from 'react';
 import JourneyTimeline from './JourneyTimeline';
 import teamData from '../Data/team';
+import testArrow from '../assets/testarrow.svg';
 
 const TeamPageD = ({ team, timelineData }) => {
   const members = teamData[team]?.teamMembers || [];
@@ -44,7 +45,7 @@ const TeamPageD = ({ team, timelineData }) => {
     <div className="absolute top-[180px] left-[60px] flex items-center gap-[12px]">
   {/* Red Pill */}
   <div className="w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[10px] p-[10px]">
-    <div className="w-[22px] h-0 border-t-2 border-white rotate-180" />
+    <img src={testArrow} alt="Arrow"/>
     <span className="text-white text-[16px] leading-[20px] font-normal">
       Teams
     </span>
