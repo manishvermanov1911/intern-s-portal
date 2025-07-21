@@ -1,7 +1,7 @@
 import React from "react";
 import testArrow from "../assets/testarrow.svg";
 
-const TeamPageD = ({ team, teamMembers, timelineImage }) => {
+const TeamPageD = ({ team, teamMembers, timelineImage, teamDescription }) => {
   const members = teamMembers;
 
   const TeamCard = ({ name, image, bio, profileLink }) => (
@@ -71,7 +71,7 @@ const TeamPageD = ({ team, teamMembers, timelineImage }) => {
 
       {/* Subtext */}
       <div className="w-full max-w-[840px] text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
-        We progress by Reacting to demands, beautifully.
+        {teamDescription}
       </div>
 
       <div className="w-full max-w-[904px] text-[48px] leading-[110.58%] text-center text-white font-urbanist mb-4">

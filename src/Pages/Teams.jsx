@@ -1,31 +1,32 @@
 // src/pages/Teams.jsx
 import React from "react";
 import TeamCard from "../components/TeamCard";
+import teamTimelineInfo from "../Data/teamTimelineInfo.json";
 
 const competencies = [
   {
     title: "AEM",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.AEM.description,
   },
   {
     title: "UI",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.UI.description,
   },
   {
     title: "Data",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.Data.description,
   },
   {
     title: "CJM",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.CJM.description,
   },
   {
     title: "UX",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.UX.description,
   },
   {
     title: "Workfront",
-    description: "Hot Pink. Cat, don't like people. I like myself though.",
+    description: teamTimelineInfo.Workfront.description,
   },
 ];
 
