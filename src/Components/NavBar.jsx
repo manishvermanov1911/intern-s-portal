@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import adobeLogo from "../../public/AdobeLogo.svg";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -17,7 +16,7 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={adobeLogo} alt="Adobe Logo" className="h-8" />
+          <img src="/AdobeLogo.svg" alt="Adobe Logo" className="h-8" />
         </a>
 
         {/* Desktop Nav */}

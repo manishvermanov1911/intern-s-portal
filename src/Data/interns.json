@@ -1,7 +1,7 @@
 [
   {
     "employee_id": 1,
-    "photo": "/public/intern_pictures/Ajay K.M_photo.jpg",
+    "photo": "/intern_pictures/Ajay K.M_photo.jpg",
     "ai_avatar": null,
     "name": "Ajay K.M",
     "college_name": "MCA Computer Application",
@@ -17,8 +17,8 @@
   },
   {
     "employee_id": 2,
-    "photo": "/public/intern_pictures/Aman Singla_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Aman Singla_ai_avatar.png",
+    "photo": "/intern_pictures/Aman Singla_photo.jpg",
+    "ai_avatar": "/intern_pictures/Aman Singla_ai_avatar.png",
     "name": "Aman Singla",
     "college_name": "Maharishi Dayanand University",
     "about_yourself": "I'm Aman Singla, a Research Assistant at MIDAS Lab, IIIT Delhi, where I lead the development of tools like Audino, a scalable data annotation platform used in multiple enterprise and research settings. My work revolves around applied AI, product engineering, and automation at scale \u2014 especially around speech and language technologies. I\u2019ve also collaborated with teams to build internal AI-driven platforms. With hands-on experience deploying systems and managing data pipelines, I focus on execution, impact, and solving real-world bottlenecks in AI workflows.",
@@ -33,8 +33,8 @@
   },
   {
     "employee_id": 3,
-    "photo": "/public/intern_pictures/Amitoj Singh Baweja_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Amitoj Singh Baweja_ai_avatar.jpg",
+    "photo": "/intern_pictures/Amitoj Singh Baweja_photo.jpg",
+    "ai_avatar": "/intern_pictures/Amitoj Singh Baweja_ai_avatar.jpg",
     "name": "Amitoj Singh Baweja",
     "college_name": "SRM Institute of Science and Technology, Mtech Integrated AI",
     "about_yourself": null,
@@ -49,8 +49,8 @@
   },
   {
     "employee_id": 4,
-    "photo": "/public/intern_pictures/Arshit Tiwari_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Arshit Tiwari_ai_avatar.png",
+    "photo": "/intern_pictures/Arshit Tiwari_photo.jpg",
+    "ai_avatar": "/intern_pictures/Arshit Tiwari_ai_avatar.png",
     "name": "Arshit Tiwari",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
     "about_yourself": "As far back as I can remember, I have been fascinated with anything related to computers and computer science, I\u2019m passionate about building user-centric digital experiences and continuously learning how modern web technologies work under the hood. This internship has not only deepened my technical skills but also taught me the value of collaboration, adaptability, and structured problem-solving.",
@@ -81,8 +81,8 @@
   },
   {
     "employee_id": 6,
-    "photo": "/public/intern_pictures/Athithya V_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Athithya V_ai_avatar.png",
+    "photo": "/intern_pictures/Athithya V_photo.jpg",
+    "ai_avatar": "/intern_pictures/Athithya V_ai_avatar.png",
     "name": "Athithya V",
     "college_name": "Sathyabama Institute of Science and Technology",
     "about_yourself": "Hey everyone, I'm Athithya I'm from Chennai pursuing my 3rd year of computer science engineering at Sathyabama Institute of Science and Technology. I'm an avid fan of motorsports and all automobiles that employ 4 wheels, I also like listening to music and watching older movies but not too old ones. I swim in my spare time. I'm also smart enough to predict failure but not avoid them.",
@@ -97,7 +97,7 @@
   },
   {
     "employee_id": 7,
-    "photo": "/public/intern_pictures/Bhavya Harlalka_photo.jpg",
+    "photo": "/intern_pictures/Bhavya Harlalka_photo.jpg",
     "ai_avatar": null,
     "name": "Bhavya Harlalka",
     "college_name": "VIT Vellore BTech in CSE Core",
@@ -129,7 +129,7 @@
   },
   {
     "employee_id": 9,
-    "photo": "/public/intern_pictures/Khushi Singh_photo.jpg",
+    "photo": "/intern_pictures/Khushi Singh_photo.jpg",
     "ai_avatar": null,
     "name": "Khushi Singh",
     "college_name": "Maulana Azad National Institute of technology,MCA",
@@ -177,7 +177,7 @@
   },
   {
     "employee_id": 12,
-    "photo": "/public/intern_pictures/Meghashyam Shenoy_photo.jpg",
+    "photo": "/intern_pictures/Meghashyam Shenoy_photo.jpg",
     "ai_avatar": null,
     "name": "Meghashyam Shenoy",
     "college_name": "MIT Manipal, Data Science",
@@ -193,7 +193,7 @@
   },
   {
     "employee_id": 13,
-    "photo": "/public/intern_pictures/Piyush Patel_photo.jpg",
+    "photo": "/intern_pictures/Piyush Patel_photo.jpg",
     "ai_avatar": null,
     "name": "Piyush Patel",
     "college_name": "NITK Surathkal , MCA",
@@ -209,7 +209,7 @@
   },
   {
     "employee_id": 14,
-    "photo": "/public/intern_pictures/Pranjal Rastogi_photo.jpg",
+    "photo": "/intern_pictures/Pranjal Rastogi_photo.jpg",
     "ai_avatar": null,
     "name": "Pranjal Rastogi",
     "college_name": "Plaksha University, B.Tech in Computer Science and Artificial Intelligence",
@@ -225,8 +225,8 @@
   },
   {
     "employee_id": 15,
-    "photo": "/public/intern_pictures/Priya Singh_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Priya Singh_ai_avatar.png",
+    "photo": "/intern_pictures/Priya Singh_photo.jpg",
+    "ai_avatar": "/intern_pictures/Priya Singh_ai_avatar.png",
     "name": "Priya Singh",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
     "about_yourself": "I'm Priya Singh, currently pursuing my MCA from NITK. I genuinely enjoy playing around with code whether it's building something new or just exploring out of curiosity. I'm always excited to try something different\u2014whether it's food, a new place, a sport, or even understanding how people think. I also like to tap into my creative side once in a while and write short, poem-ish notes for the people I care about. And of course, I'm a big-time animal lover\u2014especially when it comes to cats and dogs!",
@@ -241,7 +241,7 @@
   },
   {
     "employee_id": 16,
-    "photo": "/public/intern_pictures/Pujitha Tungala_photo.jpg",
+    "photo": "/intern_pictures/Pujitha Tungala_photo.jpg",
     "ai_avatar": null,
     "name": "Pujitha Tungala",
     "college_name": null,
@@ -257,7 +257,7 @@
   },
   {
     "employee_id": 17,
-    "photo": "/public/intern_pictures/Raghav Balakrishnan_photo.png",
+    "photo": "/intern_pictures/Raghav Balakrishnan_photo.png",
     "ai_avatar": null,
     "name": "Raghav Balakrishnan",
     "college_name": "PES University Btech Computer Science and Engineering",
@@ -273,7 +273,7 @@
   },
   {
     "employee_id": 18,
-    "photo": "/public/intern_pictures/Rayna Vallachira Geo_photo.jpg",
+    "photo": "/intern_pictures/Rayna Vallachira Geo_photo.jpg",
     "ai_avatar": null,
     "name": "Rayna Vallachira Geo",
     "college_name": "Nitte Meenaakshi Institute of Technology , Btech- Computer Science Engineering",
@@ -289,8 +289,8 @@
   },
   {
     "employee_id": 19,
-    "photo": "/public/intern_pictures/Riya Atlas_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Riya Atlas_ai_avatar.jpg",
+    "photo": "/intern_pictures/Riya Atlas_photo.jpg",
+    "ai_avatar": "/intern_pictures/Riya Atlas_ai_avatar.jpg",
     "name": "Riya Atlas",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
     "about_yourself": "I m Riya Atlas, a girl from Himachal Pradesh who didn't know how to code two years back. Switching from mathematics to computer science and then being at Adobe as an intern was completely unexpected and I have realised after coming here only that I m enjoying what I m doing !!",
@@ -305,7 +305,7 @@
   },
   {
     "employee_id": 20,
-    "photo": "/public/intern_pictures/Sagar Sharma_photo.jpg",
+    "photo": "/intern_pictures/Sagar Sharma_photo.jpg",
     "ai_avatar": null,
     "name": "Sagar Sharma",
     "college_name": "MCA @ Christ University Bangalore",
@@ -321,8 +321,8 @@
   },
   {
     "employee_id": 21,
-    "photo": "/public/intern_pictures/Saicharan R_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Saicharan R_ai_avatar.png",
+    "photo": "/intern_pictures/Saicharan R_photo.jpg",
+    "ai_avatar": "/intern_pictures/Saicharan R_ai_avatar.png",
     "name": "Saicharan R",
     "college_name": "SRM IST , MCA",
     "about_yourself": null,
@@ -337,7 +337,7 @@
   },
   {
     "employee_id": 22,
-    "photo": "/public/intern_pictures/Saman Rahman_photo.jpg",
+    "photo": "/intern_pictures/Saman Rahman_photo.jpg",
     "ai_avatar": null,
     "name": "Saman Rahman",
     "college_name": "SRMIST - MCA",
@@ -353,8 +353,8 @@
   },
   {
     "employee_id": 23,
-    "photo": "/public/intern_pictures/Samanvi P_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Samanvi P_ai_avatar.png",
+    "photo": "/intern_pictures/Samanvi P_photo.jpg",
+    "ai_avatar": "/intern_pictures/Samanvi P_ai_avatar.png",
     "name": "Samanvi P",
     "college_name": "PES University, BTech CSE",
     "about_yourself": "Hi! I'm a Computer Science engineering student from PES University with a strong interest in full-stack development, cloud computing, and AI-driven applications. I enjoy building scalable web applications and have hands-on experience with technologies like React, Node.js, and AWS. I'm currently enhancing my skills in backend integration and serverless architectures. Passionate about solving real-world problems through technology, I'm eager to contribute meaningfully to team projects and learn from experienced professionals. I thrive in collaborative environments and am always open to new challenges.",
@@ -369,8 +369,8 @@
   },
   {
     "employee_id": 24,
-    "photo": "/public/intern_pictures/Saumya Dwivedi_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Saumya Dwivedi_ai_avatar.png",
+    "photo": "/intern_pictures/Saumya Dwivedi_photo.jpg",
+    "ai_avatar": "/intern_pictures/Saumya Dwivedi_ai_avatar.png",
     "name": "Saumya Dwivedi",
     "college_name": "Christ (Deemed to be) University Banaglore, MCA",
     "about_yourself": "I would describe myself as someone who is always eager to learn and curious about how things work. From a young age, I\u2019ve had a deep interest in exploring new ideas, and that curiosity has shaped both my academic and personal journey. Sometimes, I pause and reflect\u2014it's surreal to think that the little girl who once wondered what her 20s would look like has come this far, learning, growing, and stepping into the professional world. That sense of wonder still drives me today. As I continue on this path, I\u2019m excited about every opportunity that allows me to challenge myself, build meaningful experiences, and contribute something valuable along the way.",
@@ -385,8 +385,8 @@
   },
   {
     "employee_id": 25,
-    "photo": "/public/intern_pictures/Shruti Chaurasia_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Shruti Chaurasia_ai_avatar.png",
+    "photo": "/intern_pictures/Shruti Chaurasia_photo.jpg",
+    "ai_avatar": "/intern_pictures/Shruti Chaurasia_ai_avatar.png",
     "name": "Shruti Chaurasia",
     "college_name": "Maulana Azad National Institute of Technology, Bhopal (MCA)",
     "about_yourself": "I am a curious and forward-thinking individual with a passion for building meaningful tech experiences. I love turning ideas into action, whether it's through clean code, clever UI, or just asking the right questions. I\u2019m constantly exploring, learning, and creating \u2014 with a strong focus on problem-solving, people-centric design, and pushing the boundaries of what I can do.",
@@ -401,8 +401,8 @@
   },
   {
     "employee_id": 26,
-    "photo": "/public/intern_pictures/Siyona Snotra_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Siyona Snotra_ai_avatar.png",
+    "photo": "/intern_pictures/Siyona Snotra_photo.jpg",
+    "ai_avatar": "/intern_pictures/Siyona Snotra_ai_avatar.png",
     "name": "Siyona Snotra",
     "college_name": "Christ University, MCA",
     "about_yourself": "I\u2019m Siyona, a passionate Computer Science graduate with a strong interest in building smart, user-centric web applications. I\u2019ve gained hands-on experience through internships and academic projects involving Front-end(UI) development, data analysis, and AI-driven interfaces. I enjoy turning real-world problems into intuitive digital solutions using technologies like React, Python, and cloud platforms. With a solid foundation in software development and a keen eye for design and logic, I\u2019m continuously exploring innovative ideas that blend functionality with impactful user experiences.",
@@ -417,7 +417,7 @@
   },
   {
     "employee_id": 27,
-    "photo": "/public/intern_pictures/Sneha Dange_photo.jpg",
+    "photo": "/intern_pictures/Sneha Dange_photo.jpg",
     "ai_avatar": null,
     "name": "Sneha Dange",
     "college_name": "Maulana Azad National Institute of Technology, Master of Computer Applications",
@@ -433,7 +433,7 @@
   },
   {
     "employee_id": 28,
-    "photo": "/public/intern_pictures/Sriganesh Gangadhar_photo.jpg",
+    "photo": "/intern_pictures/Sriganesh Gangadhar_photo.jpg",
     "ai_avatar": null,
     "name": "Sriganesh Gangadhar",
     "college_name": "PES University Btech CSE",
@@ -449,7 +449,7 @@
   },
   {
     "employee_id": 29,
-    "photo": "/public/intern_pictures/Suhani Jain_photo.jpg",
+    "photo": "/intern_pictures/Suhani Jain_photo.jpg",
     "ai_avatar": null,
     "name": "Suhani Jain",
     "college_name": "Plaksha University Computer Science and Artificial Intelligence",
@@ -465,7 +465,7 @@
   },
   {
     "employee_id": 30,
-    "photo": "/public/intern_pictures/Thanishk Narayanan_photo.jpg",
+    "photo": "/intern_pictures/Thanishk Narayanan_photo.jpg",
     "ai_avatar": null,
     "name": "Thanishk Narayanan",
     "college_name": "Computer Science and Engineering, PES University",
@@ -481,8 +481,8 @@
   },
   {
     "employee_id": 31,
-    "photo": "/public/intern_pictures/Vaishhnavi Kadiyala_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Vaishhnavi Kadiyala_ai_avatar.png",
+    "photo": "/intern_pictures/Vaishhnavi Kadiyala_photo.jpg",
+    "ai_avatar": "/intern_pictures/Vaishhnavi Kadiyala_ai_avatar.png",
     "name": "Vaishhnavi Kadiyala",
     "college_name": "Energy Institute of Bengaluru , B,Tech , Computer Science Engineering",
     "about_yourself": null,
@@ -513,8 +513,8 @@
   },
   {
     "employee_id": 33,
-    "photo": "/public/intern_pictures/Vridhi Nahata_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Vridhi Nahata_ai_avatar.jpg",
+    "photo": "/intern_pictures/Vridhi Nahata_photo.jpg",
+    "ai_avatar": "/intern_pictures/Vridhi Nahata_ai_avatar.jpg",
     "name": "Vridhi Nahata",
     "college_name": "Maulana Azad National Institute of Technology, Bhopal (MCA)",
     "about_yourself": null,
@@ -529,8 +529,8 @@
   },
   {
     "employee_id": 34,
-    "photo": "/public/intern_pictures/Yajvin Rautela_photo.jpg",
-    "ai_avatar": "/public/intern_pictures/Yajvin Rautela_ai_avatar.jpg",
+    "photo": "/intern_pictures/Yajvin Rautela_photo.jpg",
+    "ai_avatar": "/intern_pictures/Yajvin Rautela_ai_avatar.jpg",
     "name": "Yajvin Rautela",
     "college_name": "Vellore Institute of Technology - Vellore",
     "about_yourself": "I am a fitness enthusiast , and an avid Anime Fan. Contradicting, yes. But what\u2019s life without a little bit of contradictions?",
@@ -545,7 +545,7 @@
   },
   {
     "employee_id": 35,
-    "photo": "/public/intern_pictures/Yashi Singh_photo.jpg",
+    "photo": "/intern_pictures/Yashi Singh_photo.jpg",
     "ai_avatar": null,
     "name": "Yashi Singh",
     "college_name": "MCA, NIT BHOPAL",
