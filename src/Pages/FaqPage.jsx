@@ -1,25 +1,83 @@
 import React from "react";
 import FaqDropdown from "../Components/FaqDropdown";
-import doImage from "../assets/do.png";
-import dontImage from "../assets/dont.png";
-
+import doImage from "../assets/test_do.svg";
+import dontImage from "../assets/test_dont.svg";
 const items = [
   {
     label: "Do",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat totam id et, necessitatibus neque modi quibusdam facilis mollitia harum? Eveniet quaerat libero harum beatae. Cupiditate odit deserunt nulla adipisci.",
+    text: "Ask for feedback regularly — Use it to continuously improve during your internship.",
   },
-  { label: "Don't", text: "Don't share personal info with strangers." },
-  { label: "Do", text: "Check-in with your mentor weekly." },
-  { label: "Don't", text: "Don't skip daily standups." },
-  { label: "Do", text: "Celebrate small wins — they matter!" },
-
-  { label: "Do", text: "Document your work regularly." },
-
-  { label: "Do", text: "Be kind and ask questions!" },
-  { label: "Don't", text: "Don't hoard information, share it." },
   {
     label: "Don't",
-    text: "Don't pretend to know everything. Asking questions makes you look smart, not clueless.",
+    text: "Don't experiment with the pantry steamer — If you're unsure, ask someone for help instead.",
+  },
+  {
+    label: "Do",
+    text: "Acknowledge the small tasks your mentor or SPOC asks you to do — it reflects attentiveness and respect.",
+  },
+  {
+    label: "Don't",
+    text: "Don't miss any office celebrations — They're a great way to bond with your team and be part of the culture.",
+  },
+  {
+    label: "Do",
+    text: "Attend meetings on time — Punctuality is a key part of professional behavior.",
+  },
+  {
+    label: "Don't",
+    text: "Don't skip meetings — Whether it's a team sync or an intern gathering, every meeting adds value to your experience.",
+  },
+  {
+    label: "Do",
+    text: "Keep in regular contact with your mentor — Stay aligned on expectations and progress.",
+  },
+  {
+    label: "Don't",
+    text: "Don't miss any meetings with Adobe's CEO — These are rare opportunities to learn from leadership.",
+  },
+  {
+    label: "Do",
+    text: "Finalize your presentation project as early as possible — This avoids last-minute stress and gives time for feedback.",
+  },
+  {
+    label: "Don't",
+    text: "Don't hesitate to ask questions — No question is too small; seeking clarity shows you care.",
+  },
+  {
+    label: "Do",
+    text: "Install Outlook, Teams, and Slack on your phone — Stay updated, connected, and responsive.",
+  },
+  {
+    label: "Don't",
+    text: "Don't address anyone as 'sir' or 'ma'am' — Adobe follows a first-name culture, regardless of position.",
+  },
+  {
+    label: "Do",
+    text: "Make full use of the office facilities — Utilize the gym, outdoor courts, cricket nets, and more. Networking often happens after work hours, so don't hesitate to stay back occasionally.",
+  },
+  {
+    label: "Don't",
+    text: "Don't forget to carry an umbrella — Weather can be unpredictable, and staying dry keeps you comfortable and presentable.",
+  },
+  {
+    label: "Do",
+    text: "While playing sports, return equipment to its place and inform the facilities manager if anything gets damaged.",
+  },
+  {
+    label: "Don't",
+    text: "Don't depend on Bengaluru traffic — Always plan your commute in advance to avoid delays.",
+  },
+  {
+    label: "Do",
+    text: "Greet your mentor in the morning — A simple 'Good Morning' can help build a positive rapport.",
+  },
+  {
+    label: "Don't",
+    text: "Don't forget to get your Creative Cloud subscription using your personal email ID — not your Adobe one — to retain access even after your internship ends.",
+  },
+  {
+    label: "Do",
+    text: "Ensure that issued laptops are in working condition — Check ports and battery before accepting the device.",
   },
 ];
 
@@ -27,32 +85,35 @@ const CardBase = ({ label, text, bgImage }) => {
   const isDont = label === "Don't";
 
   return (
-    <div
-      className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] h-[400px] bg-no-repeat bg-cover bg-center rounded-[60px]"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      {/* Pill Label (Frame 13 style - different for Do / Don't) */}
-      <div
-        className={`absolute flex justify-center items-center px-5 py-6 gap-[10px] font-title text-[50px]`}
-        style={{
-          width: isDont ? "158px" : "108px",
-          height: "106px",
-          left: isDont
-            ? "calc(50% - 158px/2 - 95px)"
-            : "calc(50% - 108px/2 - 122px)",
-          top: isDont ? "24px" : "20px",
-          background: "rgba(255, 255, 255, 0.2)",
-          borderRadius: "60px",
-          color: isDont ? "#FF0000" : "#FFF7E1",
-        }}
-      >
-        {label}:
+    <div className="relative flex items-center justify-center w-full h-full">
+      <img
+        src={bgImage}
+        alt={label}
+        className="object-contain absolute inset-0 w-full h-full"
+      />
+      <div className="relative w-full h-[400px] flex items-center justify-center">
+        {/* Pill Label (Frame 13 style - different for Do / Don't) */}
+        <div
+          className={`absolute flex justify-center items-center px-5 py-6 gap-[10px] font-title text-[50px]`}
+          style={{
+            width: isDont ? "158px" : "108px",
+            height: "106px",
+            left: isDont
+              ? "calc(50% - 158px/2 - 95px)"
+              : "calc(50% - 108px/2 - 122px)",
+            top: isDont ? "24px" : "20px",
+            background: "rgba(255, 255, 255, 0.2)",
+            borderRadius: "60px",
+            color: isDont ? "#FF0000" : "#FFF7E1",
+          }}
+        >
+          {label}.
+        </div>
+        {/* Description */}
+        <p className="absolute font-body text-base md:text-lg text-[#FFF7E1] mt-20 px-4 text-center max-w-[300px]">
+          {text}
+        </p>
       </div>
-
-      {/* Description */}
-      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-body text-[16px] sm:text-[18px] leading-[22px] z-30">
-        {text}
-      </p>
     </div>
   );
 };
@@ -65,18 +126,16 @@ const DontCard = ({ label = "Don't", text }) => (
   <CardBase label={label} text={text} bgImage={dontImage} />
 );
 
-const Frame128Wrapper = () => (
-  <div className="w-full flex flex-col items-center px-4 mt-24">
-    {/* Subheading ABOVE heading */}
-
-    <h2 className="text-[32px] sm:text-[36px] md:text-[48px] leading-[44px] md:leading-[58px] text-center font-title text-[#FFF7E1] mb-2">
+const SurvivalKit = () => (
+  <div className="w-full flex flex-col items-center px-4 mt-8">
+    <h2 className="text-3xl md:text-5xl text-center font-title text-[#FFF7E1] mb-4 font-title">
       Survival Kit
     </h2>
-    <p className="text-[16px] sm:text-[18px] leading-[22px] text-center font-body text-[#FFF7E1] max-w-[840px] mb-8">
+    <p className="text-sm md:text-lg text-center font-body text-[#FFF7E1] mb-8">
       A compilation of the wisdom of interns past.
-      <br></br>Don’t make the same mistakes we did. Or do… but read this first.
+      <br></br>Don't make the same mistakes we did. Or do… but read this first.
     </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center w-full max-w-[1240px]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center w-full">
       {items.map((item, index) =>
         item.label === "Don't" ? (
           <DontCard key={index} text={item.text} />
@@ -161,20 +220,20 @@ const faqData = [
 ];
 
 const FaqPage = () => (
-  <div className="w-full bg-black text-[#FFF7E1] min-h-screen flex flex-col items-center px-4 pb-24">
-    <h1 className="text-[60px] md:text-[100px] text-center font-title font-normal mt-32 mb-6">
+  <div className="max-w-6xl mx-auto px-4 text-center mt-32 flex flex-col items-center">
+    <h1 className="text-5xl md:text-7xl mb-3 text-[#FFF7E1] font-title">
       FAQs
     </h1>
-    <p className="text-[16px] leading-[20px] text-center font-body text-[#FFF7E1] max-w-[840px] mb-12">
+    <p className="text-base md:text-lg text-center font-body text-[#FFF7E1] mb-8">
       For everything you were too afraid to ask in the group chat.
     </p>
 
-    <div className="w-full max-w-[1193px] flex flex-col gap-[28px] items-center">
+    <div className="w-full flex flex-col gap-8 items-center">
       {faqData.map((cat, idx) => (
         <FaqDropdown key={idx} title={cat.title} questions={cat.questions} />
       ))}
 
-      <Frame128Wrapper />
+      <SurvivalKit />
     </div>
   </div>
 );

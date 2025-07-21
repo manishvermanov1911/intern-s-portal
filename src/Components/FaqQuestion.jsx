@@ -25,12 +25,12 @@ const FaqQuestion = ({ question, answer, categoryOpen }) => {
         </span>
         {open ? (
           <FaChevronUp
-            className="w-[38px] h-[36px]"
+            className="w-[24px] h-[24px] md:w-[36px] md:h-[36px]"
             style={{ color: chevronColor }}
           />
         ) : (
           <FaChevronDown
-            className="w-[38px] h-[36px]"
+            className="w-[24px] h-[24px] md:w-[36px] md:h-[36px]"
             style={{ color: chevronColor }}
           />
         )}
@@ -38,7 +38,7 @@ const FaqQuestion = ({ question, answer, categoryOpen }) => {
 
       {/* Answer attached below question */}
       {open && (
-        <div className="px-[14px] pt-4 pb-5  rounded-b-[16px] font-body text-[16px] leading-[20px] text-white transition-all duration-300">
+        <div className="px-[14px] pt-4 pb-5 rounded-b-[16px] font-body text-[16px] leading-[20px] text-white transition-all duration-300">
           {answer}
         </div>
       )}
