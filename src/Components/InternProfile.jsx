@@ -15,7 +15,7 @@ const InternProfilePage = ({ interns }) => {
   if (!intern) return <div className="text-white p-10">Intern not found.</div>;
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans px-4 md:px-16 py-8 md:py-12">
+    <div className="max-w-6xl mx-auto text-white min-h-screen font-instrument px-4 py-8">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row md:gap-14 items-start">
         {/* Mobile Arrow + Team and Name */}

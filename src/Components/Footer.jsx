@@ -29,85 +29,69 @@ export default function Footer() {
   const rightCreators = creators.slice(6, 12);
 
   return (
-    <>
-      <style>
-        {`
-          .writing-mode-vertical {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            transform: rotate(180deg);
-            font-size: 4.5rem;
-            line-height: 1.4;
-          }
-        `}
-      </style>
+    <footer className="w-full bg-[#1a1a1a] rounded-t-3xl px-4 sm:px-8 mt-2 py-12 text-white overflow-hidden">
+      <div className="max-w-6xl w-full mx-auto flex flex-row items-stretch justify-between">
+        {/* Left: ACS INTERNS 2025 */}
+        <div className="flex flex-col justify-center items-start min-w-0 flex-1 pl-8 sm:pl-16">
+          <span className="font-urbanist text-5xl sm:text-6xl md:text-7xl break-words">
+            ACS
+            <br />
+            INTERNS
+          </span>
+          <span className="font-urbanist text-5xl sm:text-6xl md:text-7xl font-bold text-[#ff2a00] mt-2">
+            2025
+          </span>
+        </div>
 
-      <footer className="w-full bg-[#1a1a1a] rounded-t-3xl px-4 sm:px-8 py-12 mt-16 text-white overflow-hidden">
-        <div className="max-w-screen-xl w-full mx-auto flex flex-col md:flex-row items-stretch justify-between gap-8 md:gap-0">
-          {/* Left: ACS INTERNS 2025 */}
-          <div className="flex flex-col justify-center items-start min-w-0 flex-1 pl-8 sm:pl-16">
-            <span className="text-5xl sm:text-6xl md:text-7xl font-light leading-tight break-words">
-              ACS
-              <br />
-              INTERNS
-            </span>
-            <span className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff2a00] mt-2">
-              2025
-            </span>
+        {/* Center: Navigation */}
+        <div className="flex flex-row items-center justify-center min-w-0 flex-1 gap-6 md:gap-10 overflow-hidden">
+          <span className="[writing-mode:vertical-lr] rotate-180 text-4xl font-urbanist writing-mode-vertical text-gray-400 select-none whitespace-nowrap">
+            NAVIGATION
+          </span>
+          <div className="flex flex-col gap-4 items-start min-w-0">
+            {navLinks.map((link, idx) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className={`text-sm sm:text-base text-white hover:underline transition-colors whitespace-nowrap`}
+              >
+                {link.name}
+              </a>
+            ))}
           </div>
+        </div>
 
-          {/* Center: Navigation */}
-          <div className="flex flex-row items-center justify-center min-w-0 flex-1 gap-6 md:gap-10 overflow-hidden">
-            <span className="writing-mode-vertical text-gray-400 select-none whitespace-nowrap">
-              NAVIGATION
-            </span>
-            <div className="flex flex-col gap-10 items-start min-w-0">
-              {navLinks.map((link, idx) => (
+        {/* Right: Creators in two columns */}
+        <div className="flex flex-row items-center justify-end min-w-0 flex-1 gap-6 md:gap-10 overflow-hidden">
+          <span className="[writing-mode:vertical-lr] rotate-180 text-4xl text-gray-400 select-none whitespace-nowrap">
+            CREATORS
+          </span>
+          <div className="flex flex-row gap-12">
+            <div className="flex flex-col gap-5">
+              {leftCreators.map((creator, idx) => (
                 <a
-                  key={link.name}
-                  href={link.href}
-                  className={`text-sm sm:text-base ${
-                    idx === 0 ? "text-[#ff2a00]" : "text-white"
-                  } hover:underline transition-colors whitespace-nowrap`}
+                  key={idx}
+                  href={creator[1]}
+                  className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
                 >
-                  {link.name}
+                  {creator[0]}
+                </a>
+              ))}
+            </div>
+            <div className="flex flex-col gap-5">
+              {rightCreators.map((creator, idx) => (
+                <a
+                  key={idx + 8}
+                  href={creator[1]}
+                  className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
+                >
+                  {creator[0]}
                 </a>
               ))}
             </div>
           </div>
-
-          {/* Right: Creators in two columns */}
-          <div className="flex flex-row items-center justify-end min-w-0 flex-1 gap-6 md:gap-10 overflow-hidden">
-            <span className="writing-mode-vertical text-gray-400 select-none whitespace-nowrap">
-              CREATORS
-            </span>
-            <div className="flex flex-row gap-12">
-              <div className="flex flex-col gap-5">
-                {leftCreators.map((creator, idx) => (
-                  <a
-                    key={idx}
-                    href={creator[1]}
-                    className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
-                  >
-                    {creator[0]}
-                  </a>
-                ))}
-              </div>
-              <div className="flex flex-col gap-5">
-                {rightCreators.map((creator, idx) => (
-                  <a
-                    key={idx + 8}
-                    href={creator[1]}
-                    className="text-xs sm:text-sm text-white hover:underline whitespace-nowrap"
-                  >
-                    {creator[0]}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }
