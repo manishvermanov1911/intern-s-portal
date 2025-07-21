@@ -95,32 +95,66 @@ const Frame128Wrapper = () => (
 
 const faqData = [
   {
-    title: "Cateogy 1",
+    title: "Technical & Device Issues",
     questions: [
-      { question: "What is this platform?", answer: "It's a mentorship-based learning tool for interns." },
-      { question: "Can I access it after internship?", answer: "Yes, but with limited features." },
-    ],
+      {
+        question: "Should I use my Adobe email to create a GitHub account?",
+        answer: "No, use your personal email ID to avoid losing access to your repositories after your internship."
+      },
+      {
+        question: "What should I check before accepting the laptop?",
+        answer: "Ensure that your laptop, USB ports, and battery are working properly before issuing or accepting it."
+      },
+      {
+        question: "What should I do if I can't access internal tools or portals?",
+        answer: "Follow up with your mentor to get the necessary permissions."
+      },
+      {
+        question: "How can I connect my personal device to the guest Wi-Fi?",
+        answer: "Follow the specific onboarding steps shared by the IT/HR team."
+      },
+      {
+        question: "Where can I get help for technical issues with my laptop?",
+        answer: "Visit the Tech Café for hardware/software support. For example, one intern had their laptop replaced with help from a staff member named Sooraj."
+      }
+    ]
   },
   {
-    title: "Category 1",
+    title: "Workplace Navigation & Logistics",
     questions: [
-      { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
-    ],
+      {
+        question: "How can I find meeting rooms or desk spaces?",
+        answer: "Ask colleagues or refer to the office map and room locators."
+      },
+      {
+        question: "Are interns eligible for cab services?",
+        answer: "Interns are not eligible for regular cab services. However, if you're asked to stay beyond 8 PM, you can request a cab by emailing your manager for approval."
+      },
+      {
+        question: "What are the typical working hours at Adobe?",
+        answer: "Adobe doesn’t have fixed working hours, but most teams follow 10:00 AM – 6:00 PM as a guideline."
+      },
+      {
+        question: "Is there a dress code at Adobe?",
+        answer: "There is no formal dress code. You can wear smart casuals or anything comfortable and decent."
+      }
+    ]
   },
-    {
-    title: "Category 1",
+  {
+    title: "Communication & Culture",
     questions: [
-      { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
-    ],
-  },
-    {
-    title: "Category 1",
-    questions: [
-      { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
-    ],
+      {
+        question: "How should I address seniors at Adobe?",
+        answer: "It’s standard to call everyone by their first name — no 'sir' or 'ma’am', regardless of seniority."
+      },
+      {
+        question: "What if I'm unclear about my initial tasks?",
+        answer: "It's normal to feel confused at first. Understand your responsibilities by working through them, and ask teammates for help — they’ll gladly assist you."
+      }
+    ]
   }
-  // add more...
 ];
+
 
 const FaqPage = () => (
   <div className="w-full bg-black text-[#FFF7E1] min-h-screen flex flex-col items-center px-4 pb-24">
