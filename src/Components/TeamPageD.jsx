@@ -39,87 +39,89 @@ const TeamPageD = ({ team, teamMembers, timelineImage, teamDescription }) => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto min-h-screen bg-black flex flex-col items-center px-4 py-8">
-      {/* Breadcrumb */}
-      <div className="w-full max-w-[1160px] flex items-center gap-[12px] mt-[172px] mb-8">
-        {/* Red Pill */}
-        <a
-          href="/teams"
-          className="w-[114px] h-[40px] bg-[#FF0000] hover:bg-[#cc0000] rounded-full flex items-center justify-center gap-[10px] p-[10px] no-underline"
-        >
-          <img src={testArrow} alt="Arrow" />
-          <span className="text-white text-[16px] leading-[20px] font-normal">
-            Teams
-          </span>
-        </a>
+    <div className="min-w-screen min-h-screen bg-black text-white">
+      <div className="max-w-6xl mx-auto min-h-screen flex flex-col items-center px-4 py-8">
+        {/* Breadcrumb */}
+        <div className="w-full flex items-center mt-24 mb-8 gap-4">
+          {/* Red Pill */}
+          <a
+            href="/teams"
+            className="w-24 h-10 bg-[#FF0000] hover:bg-[#cc0000] rounded-3xl flex items-center justify-center gap-2 transition"
+          >
+            <img src={testArrow} alt="<" />
+            <span className="font-body text-white text-sm">
+              Teams
+            </span>
+          </a>
 
-        {/* Breadcrumb text */}
-        <div className="h-[24px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]">
-          <span className="mr-1">/</span>
-          <span className="text-red-500">{team}</span>
+          {/* Breadcrumb text */}
+          <div className="h-[24px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]">
+            <span className="mr-1">/</span>
+            <span className="text-red-500">{team}</span>
+          </div>
         </div>
-      </div>
 
-      {/* Team Title */}
-      <div className="hidden md:block w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal mb-6">
-        {team}
-      </div>
-
-      <div className="md:hidden w-[223px] h-[49px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans] mb-6">
-        {team} Members
-      </div>
-
-      {/* Subtext */}
-      <div className="w-full max-w-[840px] text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
-        {teamDescription}
-      </div>
-
-      <div className="w-full max-w-[904px] text-[48px] leading-[110.58%] text-center text-white font-urbanist mb-4">
-        Members
-      </div>
-
-      <div className="w-full max-w-[840px] text-center font-normal font-urbanist text-[14px] leading-[17px] text-white md:text-[16px] md:leading-[19px] md:text-[#FFF7E1] mb-12">
-        View profiles and bios! Learn more about what we do as{" "}
-        <span className="font-bold text-red-600">#AdobeInterns!</span>
-      </div>
-
-      {/* Cards */}
-      <div className="flex flex-col gap-[32px] items-center mb-16">
-        <div className="flex gap-[32px] flex-wrap justify-center">
-          {members.slice(0, 3).map((member, i) => (
-            <TeamCard
-              key={i}
-              name={member.name}
-              image={member.photo}
-              bio={member.about_yourself}
-              profileLink={`/intern/${member.employee_id - 1}`}
-            />
-          ))}
+        {/* Team Title */}
+        <div className="hidden md:block w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal mb-6">
+          {team}
         </div>
-        <div className="flex gap-[32px] flex-wrap justify-center">
-          {members.slice(3, 6).map((member, i) => (
-            <TeamCard
-              key={i + 3}
-              name={member.name}
-              image={member.photo}
-              bio={member.about_yourself}
-              profileLink={`/intern/${member.employee_id - 1}`}
-            />
-          ))}
+
+        <div className="md:hidden w-[223px] h-[49px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans] mb-6">
+          {team} Members
         </div>
+
+        {/* Subtext */}
+        <div className="w-full max-w-[840px] text-[18px] leading-[22px] text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
+          {teamDescription}
+        </div>
+
+        <div className="w-full max-w-[904px] text-[48px] leading-[110.58%] text-center text-white font-urbanist mb-4">
+          Members
+        </div>
+
+        <div className="w-full max-w-[840px] text-center font-normal font-urbanist text-[14px] leading-[17px] text-white md:text-[16px] md:leading-[19px] md:text-[#FFF7E1] mb-12">
+          View profiles and bios! Learn more about what we do as{" "}
+          <span className="font-bold text-red-600">#AdobeInterns!</span>
+        </div>
+
+        {/* Cards */}
+        <div className="flex flex-col gap-[32px] items-center mb-16">
+          <div className="flex gap-[32px] flex-wrap justify-center">
+            {members.slice(0, 3).map((member, i) => (
+              <TeamCard
+                key={i}
+                name={member.name}
+                image={member.photo}
+                bio={member.about_yourself}
+                profileLink={`/intern/${member.employee_id - 1}`}
+              />
+            ))}
+          </div>
+          <div className="flex gap-[32px] flex-wrap justify-center">
+            {members.slice(3, 6).map((member, i) => (
+              <TeamCard
+                key={i + 3}
+                name={member.name}
+                image={member.photo}
+                bio={member.about_yourself}
+                profileLink={`/intern/${member.employee_id - 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Timeline Title */}
+        <h2 className="w-[500px] h-[58px] text-center text-[48px] leading-[58px] font-urbanist font-normal text-white mb-8">
+          Our Internship Timeline
+        </h2>
+
+        {/* Timeline Component */}
+        <img
+          src={timelineImage}
+          alt={`${team} Timeline`}
+          className="w-full mt-4"
+        />
       </div>
-
-      {/* Timeline Title */}
-      <h2 className="w-[500px] h-[58px] text-center text-[48px] leading-[58px] font-urbanist font-normal text-white mb-8">
-        Our Internship Timeline
-      </h2>
-
-      {/* Timeline Component */}
-      <img
-        src={timelineImage}
-        alt={`${team} Timeline`}
-        className="w-full mt-4"
-      />
     </div>
   );
 };
