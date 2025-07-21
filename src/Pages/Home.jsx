@@ -4,24 +4,20 @@ import useIsMobile from "../Components/useIsMobile";
 // Add images JSON array
 const marqueeImages = [
   {
-    src: "https://images.unsplash.com/photo-1750275228384-e76a88c7c848?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/home/1.jpeg",
     alt: "Intern event 1",
   },
   {
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    src: "/home/2.jpeg",
     alt: "Intern event 2",
   },
   {
-    src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+    src: "/home/3.jpeg",
     alt: "Intern event 3",
   },
   {
-    src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+    src: "/home/4.jpeg",
     alt: "Intern event 4",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80",
-    alt: "Intern event 5",
   },
 ];
 
@@ -30,18 +26,18 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col items-center mt-32">
       <div>
-        <h1 className="font-title text-6xl md:text-9xl font-urbanist text-white/80 font-normal leading-none mb-20">
+        <h1 className="font-title text-6xl md:text-9xl font-urbanist text-white/80 font-normal leading-none mb-24">
           Intern <br></br>Portal
         </h1>
       </div>
-      <p className="text-sm md:text-normal text-center font-instrument text-[#FFF7E1] max-w-sm md:max-w-2xl mb-6 md:mb-8">
+      <p className="font-body text-base md:text-lg max-w-sm md:max-w-3xl text-center text-[#FFF7E1] mb-24">
         This internship portal contains information about all the projects that
         interns have worked on this summer, the events like Adobe Alchemy,
         connecting with leaders, and much more. Get a glimpse into intern life
         at Adobe!
       </p>
       {/* Marquee of images */}
-      <div className="w-full overflow-hidden py-4">
+      <div className="w-full overflow-hidden">
         <Marquee
           gradient={true}
           gradientColor={"black"}
@@ -66,7 +62,7 @@ export default function Home() {
         </Marquee>
       </div>
 
-      <div className="mt-14 text-[#FFF7E1] font-urbanist text-[20px] md:text-5xl ">
+      <div className="mt-24 text-[#FFF7E1] font-title text-3xl md:text-5xl mb-8">
         <span className="text-[#ff0000]">Adobe's</span> Core Values
       </div>
       {isMobile ? (
@@ -137,34 +133,32 @@ export default function Home() {
         </div>
       )}
 
-      <div className="text-[#FFF7E1] font-urbanist text-[20px] md:text-5xl mb-8">
+      <div className="font-title mt-16 text-[#FFF7E1] text-3xl md:text-5xl mb-8">
         Our team - ACS!
       </div>
 
-      <p className="max-w-sm md:max-w-2xl text-base md:text-[16px] text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
+      <p className="max-w-sm md:max-w-3xl font-body text-base md:text-lg text-center text-[#FFF7E1] mb-8">
         This internship portal contains information about all the projects that
         interns have worked on this summer, the events like Adobe Alchemy,
         connecting with leaders, and much more. Get a glimpse into intern life
         at Adobe!
       </p>
-
-      {/* flow chart here */}
-
-      <p className="max-w-sm md:max-w-2xl text-base md:text-[16px] mb-8 text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
+      {/*TODO: flow chart here */}
+      <p className="max-w-sm md:max-w-3xl font-body text-base md:text-lg text-center text-[#FFF7E1] mb-8">
         Read more about the team, or see more pictures, by clicking the buttons
         below!
       </p>
 
-      <div className="flex gap-4 bg-black p-8 justify-center">
+      <div className="flex gap-4 bg-black justify-center mb-32">
         <a
           href="/teams"
-          className="flex flex-row items-center justify-center w-[164px] h-[55px] rounded-[32px] bg-red-600 text-white font-medium hover:bg-red-700 transition"
+          className="flex flex-row items-center justify-center w-36 h-12 rounded-3xl bg-[#FF0000] hover:bg-[#CC0000] text-white font-medium transition"
         >
           Find Out More!
         </a>
         <a
           href="/gallery"
-          className="flex flex-row items-center justify-center w-[164px] h-[55px] rounded-[32px] border-2 border-red-600 text-white font-medium hover:bg-red-600 transition"
+          className="flex flex-row items-center justify-center w-36 h-12 rounded-3xl border-2 border-[#ff0000] text-white font-medium hover:bg-[#ff0000] transition"
         >
           View Gallery
         </a>

@@ -6,7 +6,7 @@ const Background = () => {
       <img
         src={bgImage}
         alt="Background"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-fill object-center"
       />
       <div className="absolute inset-0 bg-black/50" />
     </div>

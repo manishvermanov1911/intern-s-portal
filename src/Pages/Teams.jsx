@@ -34,8 +34,8 @@ export default function Teams() {
   return (
     <div className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 text-center mt-24">
-        <h1 className="text-7xl mb-3 text-[#FFF7E1] font-title">Competencies</h1>
-        <p className="text-lg text-gray-300 mb-12 font-body">
+        <h1 className="text-5xl md:text-7xl mb-3 text-[#FFF7E1] font-title">Competencies</h1>
+        <p className="text-sm md:text-lg text-[#FFF7E1] mb-12 font-body">
           The departments in the ACS vertical!
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

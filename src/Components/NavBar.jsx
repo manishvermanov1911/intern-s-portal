@@ -26,7 +26,7 @@ export default function NavBar() {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-instrument px-3 py-1 rounded-full transition-colors duration-200 text-white hover:font-medium`}
+                className={`font-body px-3 py-1 rounded-full transition-colors duration-200 text-white hover:font-medium`}
               >
                 {item.name}
               </a>
@@ -36,7 +36,7 @@ export default function NavBar() {
 
         {/* Hamburger for Mobile */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-colors relative z-30"
+          className="px-4 py-1 md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white/20 shadow-[0_4px_4px_0_rgba(255,255,255,0.25)_inset] backdrop-blur-lg z-50"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
@@ -60,38 +60,24 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <div
-        id="mobile-menu"
-        className={`fixed inset-0 bg-black/70 backdrop-blur-sm z-20 transition-all duration-300 ${
-          menuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setMenuOpen(false)}
-      />
-
-      {/* Mobile Menu Drawer */}
-      <div
-        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-gradient-to-br from-[#8a2040] to-[#7a0000] shadow-lg z-30 flex flex-col items-center pt-24 gap-6 transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        {navItems.map((item, idx) => (
-          <a
-            key={item.name}
-            href={item.href}
-            className={`w-4/5 text-center py-3 rounded-full text-lg font-medium transition-colors duration-200 ${
-              idx === 0
-                ? "bg-white/30 text-white font-bold"
-                : "text-white hover:bg-white/10"
-            }`}
-            onClick={() => setMenuOpen(false)}
-          >
-            {item.name}
-          </a>
-        ))}
-      </div>
+      {/* Mobile Nav - Full Screen Overlay */}
+      {menuOpen && (
+        <div className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center md:hidden">
+          {/* Nav Items - Centered */}
+          <div className="flex flex-col items-center space-y-8">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="font-body text-white text-2xl font-medium hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
