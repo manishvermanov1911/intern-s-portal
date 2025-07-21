@@ -74,6 +74,7 @@ export default function Home() {
                     </SwiperSlide>
                     {/* Add more slides as needed */}
                 </Swiper>
+<<<<<<< HEAD
                 <div className='mt-14 text-[#FFF7E1] font-urbanist text-[20px] sm:text-5xl '>
                     <span className='text-[#ff0000]'>Adobe's</span> Core Values
                 </div>
@@ -131,6 +132,8 @@ Our team - ACS!
     </div>
 
 
+=======
+>>>>>>> 46274ded9e58d28a87c3a46acf684c6e39373e1b
             </div>
     );
 }

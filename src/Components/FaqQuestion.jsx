@@ -13,7 +13,8 @@ const FaqQuestion = ({ question, answer, categoryOpen }) => {
   const chevronColor = categoryOpen ? "#FF0062" : "#FFFFFF";
 
   return (
-    <div className="w-full">
+    // outer one
+    <div className="w-full bg-[rgba(255,247,225,0.06)] rounded-[16px]">
       {/* Question Block */}
       <button
         onClick={() => setOpen(!open)}
@@ -23,15 +24,15 @@ const FaqQuestion = ({ question, answer, categoryOpen }) => {
           {question}
         </span>
         {open ? (
-          <FaChevronUp style={{ color: chevronColor }} />
+          <FaChevronUp className="w-[38px] h-[36px]" style={{ color: chevronColor }} />
         ) : (
-          <FaChevronDown style={{ color: chevronColor }} />
+          <FaChevronDown className="w-[38px] h-[36px]" style={{ color: chevronColor }} />
         )}
       </button>
 
       {/* Answer attached below question */}
       {open && (
-        <div className="px-[14px] pt-4 pb-5 bg-[rgba(255,247,225,0.06)] rounded-b-[16px] font-instrument text-[16px] leading-[20px] text-white transition-all duration-300">
+        <div className="px-[14px] pt-4 pb-5  rounded-b-[16px] font-instrument text-[16px] leading-[20px] text-white transition-all duration-300">
           {answer}
         </div>
       )}

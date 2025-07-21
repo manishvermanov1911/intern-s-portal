@@ -16,9 +16,10 @@ const FaqDropdown = ({ title = "Category", questions = [] }) => {
           {title}
         </span>
         {open ? (
-          <FaChevronUp className="text-white" />
+        <FaChevronUp className="text-white w-[48px] h-[46px]" />
+
         ) : (
-          <FaChevronDown className="text-white" />
+          <FaChevronDown className="text-white w-[48px] h-[46px]" />
         )}
       </button>
 

@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         urbanist: ['Urbanist', 'sans-serif'], // ✅ Don't use var()
-        instrument: ['"Instrument Sans"', 'sans-serif'],
+        instrument: ['Instrument Sans', 'sans-serif'],
       },
     },
   },

@@ -23,31 +23,31 @@ const CardBase = ({ label, text, bgImage }) => {
 
   return (
     <div
-      className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] h-[400px] bg-no-repeat bg-cover bg-center"
+      className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] h-[400px] bg-no-repeat bg-cover bg-center rounded-[60px]"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Pill Label (Frame 13 style - different for Do / Don't) */}
-      <div
-        className="absolute flex justify-center items-center px-5 py-6 gap-[10px]"
-        style={{
-          width: isDont ? "158px" : "108px",
-          height: "106px",
-          left: isDont
-            ? "calc(50% - 158px/2 - 95px)"
-            : "calc(50% - 108px/2 - 122px)",
-          top: isDont ? "24px" : "20px",
-          background: "rgba(255, 255, 255, 0.2)",
-          borderRadius: "60px",
-          fontFamily: "Urbanist",
-          fontSize: "32px",
-          color: isDont ? "#FF0000" : "#FFF7E1",
-        }}
-      >
-        {label}
-      </div>
+    <div
+  className={`absolute flex justify-center items-center px-5 py-6 gap-[10px] font-urbanist text-[50px]`}
+  style={{
+    width: isDont ? "158px" : "108px",
+    height: "106px",
+    left: isDont
+      ? "calc(50% - 158px/2 - 95px)"
+      : "calc(50% - 108px/2 - 122px)",
+    top: isDont ? "24px" : "20px",
+    background: "rgba(255, 255, 255, 0.2)",
+    borderRadius: "60px",
+    color: isDont ? "#FF0000" : "#FFF7E1",
+  }}
+>
+  {label}:
+</div>
+
+        
 
       {/* Description */}
-      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-['Instrument_Sans'] text-[16px] sm:text-[18px] leading-[22px] z-30">
+      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-[Instrument_Sans] text-[16px] sm:text-[18px] leading-[22px] z-30">
         {text}
       </p>
     </div>
@@ -107,6 +107,18 @@ const faqData = [
       { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
     ],
   },
+    {
+    title: "Category 1",
+    questions: [
+      { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
+    ],
+  },
+    {
+    title: "Category 1",
+    questions: [
+      { question: "How to contact support?", answer: "Ping the Slack channel #help or mail us at support@example.com." },
+    ],
+  }
   // add more...
 ];
 
