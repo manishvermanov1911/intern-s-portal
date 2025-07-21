@@ -42,7 +42,8 @@ const TeamPageD = ({ team, timelineData }) => {
     <div className="w-full min-h-screen bg-black">
       {/* Page content here */}
       {/* Breadcrumb */}
-    <div className="absolute top-[180px] left-[60px] flex items-center gap-[12px]">
+   <div className="absolute top-[180px] left-[calc(50%-580px)] flex items-center gap-[12px]">
+
   {/* Red Pill */}
   <div className="w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[10px] p-[10px]">
     <img src={testArrow} alt="Arrow"/>
