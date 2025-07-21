@@ -186,8 +186,12 @@ const Gallery = () => {
     <div className="max-w-6xl px-4 mx-auto">
       <div className="gallery-page mt-32">
         <header className="gallery-header mb-8">
-          <h1 className="text-5xl md:text-7xl mb-3 text-[#FFF7E1] font-title text-center">Gallery</h1>
-          <p className="text-sm md:text-lg text-[#FFF7E1] mb-12 font-body text-center">A home for our memories.</p>
+          <h1 className="text-5xl md:text-7xl mb-3 text-[#FFF7E1] font-title text-center">
+            Gallery
+          </h1>
+          <p className="text-sm md:text-lg text-[#FFF7E1] mb-12 font-body text-center">
+            A home for our memories.
+          </p>
         </header>
 
         <div className="gallery-grid">

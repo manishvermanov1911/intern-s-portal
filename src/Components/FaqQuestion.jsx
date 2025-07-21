@@ -24,9 +24,15 @@ const FaqQuestion = ({ question, answer, categoryOpen }) => {
           {question}
         </span>
         {open ? (
-          <FaChevronUp className="w-[38px] h-[36px]" style={{ color: chevronColor }} />
+          <FaChevronUp
+            className="w-[38px] h-[36px]"
+            style={{ color: chevronColor }}
+          />
         ) : (
-          <FaChevronDown className="w-[38px] h-[36px]" style={{ color: chevronColor }} />
+          <FaChevronDown
+            className="w-[38px] h-[36px]"
+            style={{ color: chevronColor }}
+          />
         )}
       </button>
 
