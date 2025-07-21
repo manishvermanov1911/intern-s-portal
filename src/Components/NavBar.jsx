@@ -2,73 +2,97 @@ import React, { useState } from "react";
 import adobeLogo from "../../public/AdobeLogo.svg";
 
 const navItems = [
-  { name: "Home", href: "#" },
-  { name: "Teams", href: "#" },
-  { name: "Journal", href: "#" },
-  { name: "FAQs", href: "#" },
-  { name: "Gallery", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Teams", href: "/teams" },
+  { name: "Journal", href: "/journal" },
+  { name: "FAQs", href: "/faq" },
+  { name: "Gallery", href: "/gallery" },
 ];
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 p-4 flex items-center justify-between">
-      {/* Logo */}
-      <div className="ml-4">
-        <img src={adobeLogo} alt="Adobe Logo" className="h-8" />
-      </div>
+    <nav className="w-full fixed top-0 left-0 z-50">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+        {/* Logo */}
+        <a href="/" className="flex items-center">
+          <img src={adobeLogo} alt="Adobe Logo" className="h-8" />
+        </a>
 
-      {/* Desktop Nav */}
-      <div className="hidden md:flex mr-8">
-        <div className="flex gap-8 bg-white/20 rounded-full px-8 py-2 items-center shadow-md">
-          {navItems.map((item, idx) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={`text-white font-medium transition-colors duration-200 ${idx === 0 ? "font-bold" : ""}`}
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* Hamburger for Mobile */}
-      <button
-        className="md:hidden mr-4 z-20"
-        onClick={() => setMenuOpen(true)}
-        aria-label="Open menu"
-      >
-        <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="2">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
-        </svg>
-      </button>
-
-      {/* Mobile Modal Menu */}
-      {menuOpen && (
-        <div className="fixed inset-0 bg-gradient-to-br from-[#8a2040] to-[#7a0000] flex flex-col items-center justify-center z-50">
-          <button
-            className="absolute top-6 right-6 text-white text-3xl"
-            onClick={() => setMenuOpen(false)}
-            aria-label="Close menu"
-          >
-            &times;
-          </button>
-          <div className="flex flex-col gap-8">
-            {navItems.map((item, idx) => (
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-2">
+          <div className="flex bg-white/20 rounded-full px-4 py-1 items-center shadow-[0_4px_4px_0_rgba(255,255,255,0.25)_inset] gap-1 backdrop-blur-lg">
+            {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className={`text-white text-2xl font-medium ${idx === 0 ? "font-bold" : ""}`}
-                onClick={() => setMenuOpen(false)}
+                className={`font-instrument px-3 py-1 rounded-full transition-colors duration-200 text-white hover:font-medium`}
               >
                 {item.name}
               </a>
             ))}
           </div>
         </div>
-      )}
+
+        {/* Hamburger for Mobile */}
+        <button
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-colors relative z-30"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span
+            className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 ${
+              menuOpen ? "rotate-45 translate-y-1.5" : ""
+            }`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 my-1 ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-white rounded transition-all duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-1.5" : ""
+            }`}
+          />
+        </button>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        id="mobile-menu"
+        className={`fixed inset-0 bg-black/70 backdrop-blur-sm z-20 transition-all duration-300 ${
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      {/* Mobile Menu Drawer */}
+      <div
+        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-gradient-to-br from-[#8a2040] to-[#7a0000] shadow-lg z-30 flex flex-col items-center pt-24 gap-6 transition-transform duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {navItems.map((item, idx) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className={`w-4/5 text-center py-3 rounded-full text-lg font-medium transition-colors duration-200 ${
+              idx === 0
+                ? "bg-white/30 text-white font-bold"
+                : "text-white hover:bg-white/10"
+            }`}
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
     </nav>
   );
 }

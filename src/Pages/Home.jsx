@@ -18,8 +18,8 @@ export default function Home() {
     return (
         <div className="w-full flex flex-col items-center  mt-32 ">
             <div>
-                <h1 className="text-[40px] sm:text-[148px] font-urbanist text-[#FFF7E1] font-normal leading-none mb-20">
-                    Intern <br className="w-0 "></br>Portal
+                <h1 className="text-6xl sm:text-9xl font-urbanist text-[#FFF7E1] font-normal leading-none mb-20">
+                    Intern <br></br>Portal
                 </h1>
             </div>
             <p className=" hidden text-[14px] sm:block  sm:text-[16px]   text-center font-instrument text-[#FFF7E1] max-w-[840px] mb-8">
