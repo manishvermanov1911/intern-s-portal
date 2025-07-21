@@ -185,7 +185,7 @@ const Gallery = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    
+    <div className="max-w-6xl px-4 mx-auto">
     <div className="gallery-page ">
       <header className="gallery-header">
             <h1>Gallery</h1>
@@ -221,6 +221,7 @@ const Gallery = () => {
         slides={images.map((img) => ({ src: img.src }))}
         />
       )}
+    </div>
     </div>
   );
 };
