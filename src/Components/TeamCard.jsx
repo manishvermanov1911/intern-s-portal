@@ -1,5 +1,5 @@
 // src/components/TeamCard.jsx
-import React from 'react';
+import React from "react";
 
 export default function TeamCard({ title, description, href }) {
   return (
