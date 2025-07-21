@@ -176,8 +176,7 @@ const images = [
   { src: p5},
   { src: p6},
   { src: p8},
-  { src: p11},
-  { src: red, label: 'HotPink'}
+  { src: p11}
 ];
 
 
