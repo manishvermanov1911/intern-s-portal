@@ -1,6 +1,7 @@
 import React from "react";
 import testArrow from "../assets/testarrow.svg";
 import PersonCard from "./PersonCard";
+import useIsMobile from "./useIsMobile";
 
 const TeamPageComponent = ({
   team,
@@ -10,35 +11,54 @@ const TeamPageComponent = ({
 }) => {
   const members = teamMembers;
 
+  const isMobile = useIsMobile();
+
   return (
     <div className="min-w-screen min-h-screen bg-black text-white">
       <div className="max-w-6xl mx-auto min-h-screen flex flex-col items-center px-4 py-8">
         {/* Team Title */}
-        <div className="relative text-5xl md:text-7xl text-center text-[#FF0000] font-urbanist font-normal mt-32 mb-4 w-full max-w-6xl">
-          {team}
-
-          {/* Breadcrumb */}
-          <div className="absolute left-0 -top-1/2 flex items-center gap-2">
-            {/* Red Pill */}
+        {isMobile && (
+          <div className="mt-12 mb-8 self-start">
             <a
               href="/teams"
-              className="w-24 h-10 bg-[#FF0000] hover:bg-[#cc0000] rounded-3xl flex items-center justify-center gap-2 transition"
+              className="w-24 h-10 rounded-3xl flex items-center justify-center gap-2 transition"
             >
               <img src={testArrow} alt="<" />
               <span className="font-body text-white text-sm">Teams</span>
             </a>
-            {/* Breadcrumb text */}
-            <span className="text-lg font-base text-[#FFF7E1]">/</span>
-            <span className="text-[#FF0000] text-lg">{team}</span>
           </div>
-        </div>
-        <div className="w-full text-lg text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
-          {teamDescription}
-        </div>
+        )}
+        <div className="relative text-5xl md:text-7xl text-center text-white md:text-[#FF0000] font-urbanist font-normal mt-0 md:mt-32 mb-4 w-full max-w-6xl">
+          {!isMobile ? team : team + " Members"}
 
-        <div className="text-3xl md:text-5xl text-center text-white font-urbanist mb-4">
-          Members
+          {/* Breadcrumb */}
+          {!isMobile && (
+            <div className="absolute left-0 -top-1/2 flex items-center gap-2">
+              {/* Red Pill */}
+              <a
+                href="/teams"
+                className="w-24 h-10 bg-[#FF0000] hover:bg-[#cc0000] rounded-3xl flex items-center justify-center gap-2 transition"
+              >
+                <img src={testArrow} alt="<" />
+                <span className="font-body text-white text-sm">Teams</span>
+              </a>
+              {/* Breadcrumb text */}
+              <span className="text-lg font-base text-[#FFF7E1]">/</span>
+              <span className="text-[#FF0000] text-lg">{team}</span>
+            </div>
+          )}
         </div>
+        {isMobile && (
+          <div className="w-full text-lg text-center text-[#FFF7E1] font-urbanist font-normal mb-8">
+            {teamDescription}
+          </div>
+        )}
+
+        {!isMobile && (
+          <div className="text-3xl md:text-5xl text-center text-white font-urbanist mb-4">
+            Members
+          </div>
+        )}
 
         <div className="text-center font-body text-sm text-white md:text-base mb-8">
           View profiles and bios! Learn more about what we do as{" "}
