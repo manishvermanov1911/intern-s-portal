@@ -47,7 +47,7 @@ const CardBase = ({ label, text, bgImage }) => {
         
 
       {/* Description */}
-      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-['Instrument_Sans'] text-[16px] sm:text-[18px] leading-[22px] z-30">
+      <p className="absolute top-[177px] left-[59px] w-[295px] text-left text-[#FFF7E1] font-[Instrument_Sans] text-[16px] sm:text-[18px] leading-[22px] z-30">
         {text}
       </p>
     </div>

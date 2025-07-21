@@ -41,25 +41,29 @@ const TeamPageD = ({ team, timelineData }) => {
     <div className="w-full min-h-screen bg-black">
       {/* Page content here */}
       {/* Breadcrumb */}
-      <div className="absolute left-[60px] top-[180px] w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[20px] p-[10px]">
-        <div className="w-[22px] h-0 border-t-2 border-white rotate-180" />
-        <span className="text-white text-[16px] leading-[20px] font-normal" >
-          Teams
-        </span>
-      </div>
-<div
-  className="absolute w-[115px] h-[24px] top-[190px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]"
-  style={{ left: 'calc(50% - 115px/2 - 400.5px)' }}
->
-  <span className="mr-1">/</span>
-  <span className='text-red-500'>{team}</span>
+    <div className="absolute top-[180px] left-[60px] flex items-center gap-[12px]">
+  {/* Red Pill */}
+  <div className="w-[114px] h-[40px] bg-[#FF0000] rounded-full flex items-center justify-center gap-[10px] p-[10px]">
+    <div className="w-[22px] h-0 border-t-2 border-white rotate-180" />
+    <span className="text-white text-[16px] leading-[20px] font-normal">
+      Teams
+    </span>
+  </div>
+
+  {/* Breadcrumb text */}
+  <div className="h-[24px] flex items-center text-[20px] leading-[20px] font-normal text-[#FFF7E1]">
+    <span className="mr-1">/</span>
+    <span className="text-red-500">{team}</span>
+  </div>
 </div>
 
 
+
       {/* Team Title */}
-      <div className="hidden md:block absolute left-[292px] top-[220px] w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal">
-        {team}
-      </div>
+     <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-[220px] w-[697px] h-[120px] text-[100px] leading-[120px] text-center text-[#FF0000] font-urbanist font-normal">
+  {team}
+</div>
+
       <div className="md:hidden absolute w-[223px] h-[49px] left-1/2 -translate-x-1/2 top-[144px] text-white text-[40px] leading-[49px] text-center font-normal font-[Instrument_Sans]">
         {team} Members
       </div>
