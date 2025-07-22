@@ -19,7 +19,7 @@ const InternProfilePage = ({ interns }) => {
         <div className="mt-12 block md:hidden">
           <div className="flex items-center">
             <a
-              href={`/teams/${intern.competency.toLowerCase()}`}
+              href={`#/teams/${intern.competency.toLowerCase()}`}
               className="w-24 h-10 rounded-3xl flex items-center justify-start gap-2 transition"
             >
               <img src={testArrow} alt="<" />
