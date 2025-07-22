@@ -5,7 +5,7 @@ import dontImage from "../assets/test_dont.svg";
 const items = [
   {
     label: "Do",
-    text: "Ask for feedback regularly — Use it to continuously improve during your internship.",
+    text: "Ensure that issued laptops are in working condition — Check ports and battery before accepting the device.",
   },
   {
     label: "Don't",
@@ -75,10 +75,6 @@ const items = [
     label: "Don't",
     text: "Don't forget to get your Creative Cloud subscription using your personal email ID — not your Adobe one — to retain access even after your internship ends.",
   },
-  {
-    label: "Do",
-    text: "Ensure that issued laptops are in working condition — Check ports and battery before accepting the device.",
-  },
 ];
 
 const CardBase = ({ label, text, bgImage }) => {
@@ -141,7 +137,7 @@ const SurvivalKit = () => (
           <DontCard key={index} text={item.text} />
         ) : (
           <DoCard key={index} text={item.text} />
-        ),
+        )
       )}
     </div>
   </div>
