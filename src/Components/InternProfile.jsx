@@ -11,6 +11,7 @@ const InternProfilePage = ({ interns }) => {
   if (!intern) return <div className="text-white p-10">Intern not found.</div>;
 
   return (
+    <div className="bg-black min-h-screen min-w-screen">
     <div className="max-w-6xl mx-auto text-white min-h-screen font-body px-4 py-8">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row md:gap-14 items-start">
@@ -182,6 +183,7 @@ const InternProfilePage = ({ interns }) => {
           </p>
         </div>
       )}
+    </div>
     </div>
   );
 };
