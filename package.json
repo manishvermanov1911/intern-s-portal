@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://acsinterns2025.github.io/portal",
+  "deploy": "gh-pages -d build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -31,6 +33,7 @@
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.3.5",
