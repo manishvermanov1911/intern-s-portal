@@ -9,14 +9,14 @@ const navLinks = [
 
 const creators = [
   ["@pranjalr", "https://linkedin.com/in/pranjal-rastogi-pjr"],
-  ["@harshithas", "https://url.to/harshithas"],
-  ["@snehadange", "www.linkedin.com/in/sneha-dange-2002021b8"],
+  ["@harshithas", "/harshitha-linkedin-not-found"],
+  ["@snehadange", "https://www.linkedin.com/in/sneha-dange-2002021b8"],
   ["@arshitt", "https://www.linkedin.com/in/arshit-tiwari/"],
   ["@piyushpatel", "https://www.linkedin.com/in/piyush-patel-03236b250/"],
   ["@priyasing", "https://www.linkedin.com/in/priya-singh-8a2050216/"],
-  ["@saumyad", "www.linkedin.com/in/dwivedisaumya"],
+  ["@saumyad", "https://www.linkedin.com/in/dwivedisaumya"],
   ["@bharlalka", "https://www.linkedin.com/in/bhavya-harlalka-16774a318/"],
-  ["@manishverma", "https://url.to/manishv"],
+  ["@manishverma", "/manish-linkedin-not-found"],
   ["@amansingla", "https://www.linkedin.com/in/aman-singla-7a481a160/"],
   ["@yrautela", "https://www.linkedin.com/in/yajvin-rautela-a02142253/"],
   ["@shchaurasia", "https://www.linkedin.com/in/shruti-chaurasia-8890bb211/"],
