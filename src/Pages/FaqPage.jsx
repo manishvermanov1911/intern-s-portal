@@ -141,7 +141,7 @@ const SurvivalKit = () => (
           <DontCard key={index} text={item.text} />
         ) : (
           <DoCard key={index} text={item.text} />
-        )
+        ),
       )}
     </div>
   </div>

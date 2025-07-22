@@ -8,7 +8,7 @@ import NavBar from "./Components/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
 import Background from "./Components/background.jsx"; // ✅ Import Background
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       {/* ✅ Wrap App with Router */}
