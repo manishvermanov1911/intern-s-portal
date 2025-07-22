@@ -92,7 +92,7 @@ const InternProfilePage = ({ interns }) => {
         {/* Right Image - responsive placement */}
         <div className="relative shrink-0 mt-4 md:mt-[218px]">
           <img
-            src={intern.photo ?? "/default-profile.jpg"}
+            src={intern.photo ?? "/portal/default-profile.jpg"}
             alt={intern.name}
             className="w-full md:w-[583px] h-auto md:h-[583px] object-cover rounded-[32px]"
           />

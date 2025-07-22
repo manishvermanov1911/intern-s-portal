@@ -2,7 +2,7 @@ const PersonCard = ({ name, image, bio, profileLink }) => (
   <div className="relative w-96 h-64 bg-white/10 rounded-3xl overflow-hidden">
     <div className="flex flex-row items-center justify-center h-full w-full relative">
       <img
-        src={image ?? "/default-profile.jpg"}
+        src={image ?? "/portal/default-profile.jpg"}
         alt={name}
         className="w-1/2 h-full object-cover flex-1"
       />
