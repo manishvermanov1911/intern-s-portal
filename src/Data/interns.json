@@ -49,7 +49,7 @@
   },
   {
     "employee_id": 4,
-    "photo": "/portal/intern_pictures/Arshit Tiwari_photo.jpg",
+    "photo": "/portal/newphotos/Arshit_picture.jpg",
     "ai_avatar": "/portal/intern_pictures/Arshit Tiwari_ai_avatar.png",
     "name": "Arshit Tiwari",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
@@ -97,7 +97,7 @@
   },
   {
     "employee_id": 7,
-    "photo": "/portal/intern_pictures/Bhavya Harlalka_photo.jpg",
+    "photo": "/portal/newphotos/Bhavya_picture.jpg",
     "ai_avatar": null,
     "name": "Bhavya Harlalka",
     "college_name": "VIT Vellore BTech in CSE Core",
@@ -113,7 +113,7 @@
   },
   {
     "employee_id": 8,
-    "photo": null,
+    "photo": "/portal/newphotos/harshitha_picture.jpg",
     "ai_avatar": null,
     "name": "Harshitha S",
     "college_name": null,
@@ -145,7 +145,7 @@
   },
   {
     "employee_id": 10,
-    "photo": null,
+    "photo": "/portal/newphotos/Manish_pictures.jpg",
     "ai_avatar": null,
     "name": "Manish Verma",
     "college_name": null,
@@ -225,7 +225,7 @@
   },
   {
     "employee_id": 15,
-    "photo": "/portal/intern_pictures/Priya Singh_photo.jpg",
+    "photo": "/portal/newphotos/Priya_pictures.jpg",
     "ai_avatar": "/portal/intern_pictures/Priya Singh_ai_avatar.png",
     "name": "Priya Singh",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
@@ -369,7 +369,7 @@
   },
   {
     "employee_id": 24,
-    "photo": "/portal/intern_pictures/Saumya Dwivedi_photo.jpg",
+    "photo": "/portal/newphotos/Saumya_picture.jpg",
     "ai_avatar": "/portal/intern_pictures/Saumya Dwivedi_ai_avatar.png",
     "name": "Saumya Dwivedi",
     "college_name": "Christ (Deemed to be) University Banaglore, MCA",
@@ -401,7 +401,7 @@
   },
   {
     "employee_id": 26,
-    "photo": "/portal/intern_pictures/Siyona Snotra_photo.jpg",
+    "photo": "/portal/newphotos/Siyona_picture.jpg",
     "ai_avatar": "/portal/intern_pictures/Siyona Snotra_ai_avatar.png",
     "name": "Siyona Snotra",
     "college_name": "Christ University, MCA",
