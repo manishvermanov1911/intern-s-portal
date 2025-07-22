@@ -1,7 +1,7 @@
 [
   {
     "employee_id": 1,
-    "photo": "/intern_pictures/Ajay K.M_photo.jpg",
+    "photo": "/portal/intern_pictures/Ajay K.M_photo.jpg",
     "ai_avatar": null,
     "name": "Ajay K.M",
     "college_name": "MCA Computer Application",
@@ -17,8 +17,8 @@
   },
   {
     "employee_id": 2,
-    "photo": "/intern_pictures/Aman Singla_photo.jpg",
-    "ai_avatar": "/intern_pictures/Aman Singla_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Aman Singla_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Aman Singla_ai_avatar.png",
     "name": "Aman Singla",
     "college_name": "Maharishi Dayanand University",
     "about_yourself": "I'm Aman Singla, a Research Assistant at MIDAS Lab, IIIT Delhi, where I lead the development of tools like Audino, a scalable data annotation platform used in multiple enterprise and research settings. My work revolves around applied AI, product engineering, and automation at scale \u2014 especially around speech and language technologies. I\u2019ve also collaborated with teams to build internal AI-driven platforms. With hands-on experience deploying systems and managing data pipelines, I focus on execution, impact, and solving real-world bottlenecks in AI workflows.",
@@ -28,13 +28,13 @@
     "mentor_name": "Kunal Sai",
     "mentor_mantra": "Aman is an exceptional mentee who consistently demonstrates strong leadership potential, rapid adaptability, intellectual rigor, and a commendable commitment to supporting others.",
     "about_project": "During my internship at Adobe, I worked on building an internal website focused on enhancing awareness and adoption of Adobe's GenAI tools among employees. The site serves as a centralized hub where users can explore various GenAI tools, understand their specific use cases, and learn how to integrate them into their daily workflow. I designed and developed the UI using Adobe Edge Delivery Services (EDS), ensuring the site loads fast and meets performance benchmarks \u2014 achieving a 100 Lighthouse score. The website features sections such as tool overviews, video walkthroughs, example use cases, and internal links for deeper engagement. One of the main challenges was getting familiar with EDS and building everything using JavaScript without static HTML, but through mentorship and experimentation, I successfully implemented a responsive and intuitive design. This project not only helped solve a real internal need but also sharpened my skills in frontend development, performance optimization, and working within Adobe\u2019s ecosystem.",
-    "about_adobe": "My internship at Adobe was nothing short of a transformation. Coming in with curiosity and a basic understanding of frontend, I was soon neck-deep in Adobe\u2019s Edge Delivery Services, building an internal AI tools hub for employees. I wasn\u2019t just coding\u2014I was researching, designing, debugging, optimizing, and learning how enterprise-grade products are actually built. What started as a challenge turned into a thrilling puzzle. From scoring a perfect 100 on Lighthouse performance to making real UI decisions that mattered, every task gave me a sense of ownership. I wasn't just \"an intern\"\u2014I was treated like a developer whose work had purpose. Weekly syncs, mentor check-ins, and real feedback loops turned my rough ideas into polished solutions. This internship gave me the space to fail, the support to improve, and the thrill of building something that people at Adobe would actually use. It's been intense, insightful, and incredibly rewarding.",
+    "about_adobe": "My internship at Adobe was nothing short of a transformation. Coming in with curiosity and a basic understanding of frontend, I was soon neck-deep in Adobe\u2019s Edge Delivery Services, building an internal AI tools hub for employees. I wasn\u2019t just coding\u2014I was researching, designing, debugging, optimizing, and learning how enterprise-grade products are actually built. What started as a challenge turned into a thrilling puzzle. From scoring a perfect 100 on Lighthouse performance to making real UI decisions that mattered, every task gave me a sense of ownership. I wasn't just "an intern\"\u2014I was treated like a developer whose work had purpose. Weekly syncs, mentor check-ins, and real feedback loops turned my rough ideas into polished solutions. This internship gave me the space to fail, the support to improve, and the thrill of building something that people at Adobe would actually use. It's been intense, insightful, and incredibly rewarding.",
     "competency": "AEM"
   },
   {
     "employee_id": 3,
-    "photo": "/intern_pictures/Amitoj Singh Baweja_photo.jpg",
-    "ai_avatar": "/intern_pictures/Amitoj Singh Baweja_ai_avatar.jpg",
+    "photo": "/portal/intern_pictures/Amitoj Singh Baweja_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Amitoj Singh Baweja_ai_avatar.jpg",
     "name": "Amitoj Singh Baweja",
     "college_name": "SRM Institute of Science and Technology, Mtech Integrated AI",
     "about_yourself": null,
@@ -49,8 +49,8 @@
   },
   {
     "employee_id": 4,
-    "photo": "/intern_pictures/Arshit Tiwari_photo.jpg",
-    "ai_avatar": "/intern_pictures/Arshit Tiwari_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Arshit Tiwari_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Arshit Tiwari_ai_avatar.png",
     "name": "Arshit Tiwari",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
     "about_yourself": "As far back as I can remember, I have been fascinated with anything related to computers and computer science, I\u2019m passionate about building user-centric digital experiences and continuously learning how modern web technologies work under the hood. This internship has not only deepened my technical skills but also taught me the value of collaboration, adaptability, and structured problem-solving.",
@@ -81,8 +81,8 @@
   },
   {
     "employee_id": 6,
-    "photo": "/intern_pictures/Athithya V_photo.jpg",
-    "ai_avatar": "/intern_pictures/Athithya V_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Athithya V_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Athithya V_ai_avatar.png",
     "name": "Athithya V",
     "college_name": "Sathyabama Institute of Science and Technology",
     "about_yourself": "Hey everyone, I'm Athithya I'm from Chennai pursuing my 3rd year of computer science engineering at Sathyabama Institute of Science and Technology. I'm an avid fan of motorsports and all automobiles that employ 4 wheels, I also like listening to music and watching older movies but not too old ones. I swim in my spare time. I'm also smart enough to predict failure but not avoid them.",
@@ -97,7 +97,7 @@
   },
   {
     "employee_id": 7,
-    "photo": "/intern_pictures/Bhavya Harlalka_photo.jpg",
+    "photo": "/portal/intern_pictures/Bhavya Harlalka_photo.jpg",
     "ai_avatar": null,
     "name": "Bhavya Harlalka",
     "college_name": "VIT Vellore BTech in CSE Core",
@@ -129,7 +129,7 @@
   },
   {
     "employee_id": 9,
-    "photo": "/intern_pictures/Khushi Singh_photo.jpg",
+    "photo": "/portal/intern_pictures/Khushi Singh_photo.jpg",
     "ai_avatar": null,
     "name": "Khushi Singh",
     "college_name": "Maulana Azad National Institute of technology,MCA",
@@ -177,7 +177,7 @@
   },
   {
     "employee_id": 12,
-    "photo": "/intern_pictures/Meghashyam Shenoy_photo.jpg",
+    "photo": "/portal/intern_pictures/Meghashyam Shenoy_photo.jpg",
     "ai_avatar": null,
     "name": "Meghashyam Shenoy",
     "college_name": "MIT Manipal, Data Science",
@@ -193,7 +193,7 @@
   },
   {
     "employee_id": 13,
-    "photo": "/intern_pictures/Piyush Patel_photo.jpg",
+    "photo": "/portal/intern_pictures/Piyush Patel_photo.jpg",
     "ai_avatar": null,
     "name": "Piyush Patel",
     "college_name": "NITK Surathkal , MCA",
@@ -204,12 +204,12 @@
     "mentor_name": "Sreeksha Akkala",
     "mentor_mantra": "Piyush is a dedicated, hard-working, and intelligent individual who consistently delivers high-quality work and approaches every task with focus and determination.",
     "about_project": "\nFor my final capstone project, I had to rebuild the food ordering website I previously made during my mini capstone \u2014 this time using **Adobe Edge Delivery Services (EDS)**. The goal was to compare traditional development with EDS: how the approach differs, how easy or difficult it is to build and maintain, and how it impacts the **Lighthouse score** and overall site speed.\n\nGetting started with EDS wasn\u2019t easy. It was a completely new way of working \u2014 using blocks, authoring content through Google Docs, and previewing through Sidekick took some getting used to. On top of that, making sure the site stayed fast and optimizing the Lighthouse score added to the initial challenge. But after a few days of exploring, trying things out, and making mistakes, I began to understand how it all fits together.\n\nOnce I got the hang of it, building the site became smoother and more intuitive. I could see the benefits of modular development, faster load times, and how clearly content and code were separated. This experience helped me learn a more scalable, efficient way of developing websites and gave me a solid comparison to the traditional approach.\n",
-    "about_adobe": "When I joined on the very first day, stepping into the corporate world was a completely new experience for me. Everything felt fresh and different from the professional environment to how communication worked in teams. Initially, I had the habit of addressing everyone as \"sir\" or \"ma'am\", but gradually I adapted and became more comfortable in this dynamic space. Over the course of my journey, I met a lot of wonderful people, made new friends, and connected with mentors who guided me patiently. I learned not just about work, but also about collaboration, communication, and what it means to grow in a professional environment. Along the way, I created valuable memories filled with learning, laughter, and joy. One personal milestone was going to the gym for the first time in my life ,right here at Adobe, with friends who made the experience both fun and motivating.\n\nI thoroughly enjoyed the various events and activities that happened during my time here. I had the opportunity to participate in the cricket tournament, where we made it to the semi-finals \u2014 a proud moment for me was defending 7 runs in the last over of the quarter-finals, something I\u2019ll always cherish. At the community fair, I stacked 19 shuttlecocks on top of each other and came second in the cycling club\u2019s challenge ,small wins, but full of excitement and fun. The Alchemy event was also a special highlight. The food, too, was something I looked forward to .\n\nBeyond these experiences, I also had the chance to dive deep into the world of UI development. I learned the foundational principles of user interface design, how developers think about structure, accessibility, and performance. My journey into Edge Delivery Services (EDS) helped me understand modern web architecture and how it compares with conventional approaches. I explored concepts like modular blocks, Google Docs-based authoring, and Sidekick previews, which opened my eyes to how scalable and efficient content delivery can be. I also learned how to analyze and improve Lighthouse scores, and why these metrics \u2014 like performance, accessibility, and SEO \u2014 are critical for real-world web experiences. This technical exposure helped me bridge the gap between design and development and strengthened my confidence as a budding frontend developer.",
+    "about_adobe": "When I joined on the very first day, stepping into the corporate world was a completely new experience for me. Everything felt fresh and different from the professional environment to how communication worked in teams. Initially, I had the habit of addressing everyone as "sir" or "ma'am", but gradually I adapted and became more comfortable in this dynamic space. Over the course of my journey, I met a lot of wonderful people, made new friends, and connected with mentors who guided me patiently. I learned not just about work, but also about collaboration, communication, and what it means to grow in a professional environment. Along the way, I created valuable memories filled with learning, laughter, and joy. One personal milestone was going to the gym for the first time in my life ,right here at Adobe, with friends who made the experience both fun and motivating.\n\nI thoroughly enjoyed the various events and activities that happened during my time here. I had the opportunity to participate in the cricket tournament, where we made it to the semi-finals \u2014 a proud moment for me was defending 7 runs in the last over of the quarter-finals, something I\u2019ll always cherish. At the community fair, I stacked 19 shuttlecocks on top of each other and came second in the cycling club\u2019s challenge ,small wins, but full of excitement and fun. The Alchemy event was also a special highlight. The food, too, was something I looked forward to .\n\nBeyond these experiences, I also had the chance to dive deep into the world of UI development. I learned the foundational principles of user interface design, how developers think about structure, accessibility, and performance. My journey into Edge Delivery Services (EDS) helped me understand modern web architecture and how it compares with conventional approaches. I explored concepts like modular blocks, Google Docs-based authoring, and Sidekick previews, which opened my eyes to how scalable and efficient content delivery can be. I also learned how to analyze and improve Lighthouse scores, and why these metrics \u2014 like performance, accessibility, and SEO \u2014 are critical for real-world web experiences. This technical exposure helped me bridge the gap between design and development and strengthened my confidence as a budding frontend developer.",
     "competency": "AEM"
   },
   {
     "employee_id": 14,
-    "photo": "/intern_pictures/Pranjal Rastogi_photo.jpg",
+    "photo": "/portal/intern_pictures/Pranjal Rastogi_photo.jpg",
     "ai_avatar": null,
     "name": "Pranjal Rastogi",
     "college_name": "Plaksha University, B.Tech in Computer Science and Artificial Intelligence",
@@ -225,8 +225,8 @@
   },
   {
     "employee_id": 15,
-    "photo": "/intern_pictures/Priya Singh_photo.jpg",
-    "ai_avatar": "/intern_pictures/Priya Singh_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Priya Singh_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Priya Singh_ai_avatar.png",
     "name": "Priya Singh",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
     "about_yourself": "I'm Priya Singh, currently pursuing my MCA from NITK. I genuinely enjoy playing around with code whether it's building something new or just exploring out of curiosity. I'm always excited to try something different\u2014whether it's food, a new place, a sport, or even understanding how people think. I also like to tap into my creative side once in a while and write short, poem-ish notes for the people I care about. And of course, I'm a big-time animal lover\u2014especially when it comes to cats and dogs!",
@@ -241,7 +241,7 @@
   },
   {
     "employee_id": 16,
-    "photo": "/intern_pictures/Pujitha Tungala_photo.jpg",
+    "photo": "/portal/intern_pictures/Pujitha Tungala_photo.jpg",
     "ai_avatar": null,
     "name": "Pujitha Tungala",
     "college_name": null,
@@ -257,7 +257,7 @@
   },
   {
     "employee_id": 17,
-    "photo": "/intern_pictures/Raghav Balakrishnan_photo.png",
+    "photo": "/portal/intern_pictures/Raghav Balakrishnan_photo.png",
     "ai_avatar": null,
     "name": "Raghav Balakrishnan",
     "college_name": "PES University Btech Computer Science and Engineering",
@@ -273,7 +273,7 @@
   },
   {
     "employee_id": 18,
-    "photo": "/intern_pictures/Rayna Vallachira Geo_photo.jpg",
+    "photo": "/portal/intern_pictures/Rayna Vallachira Geo_photo.jpg",
     "ai_avatar": null,
     "name": "Rayna Vallachira Geo",
     "college_name": "Nitte Meenaakshi Institute of Technology , Btech- Computer Science Engineering",
@@ -289,11 +289,11 @@
   },
   {
     "employee_id": 19,
-    "photo": "/intern_pictures/Riya Atlas_photo.jpg",
-    "ai_avatar": "/intern_pictures/Riya Atlas_ai_avatar.jpg",
+    "photo": "/portal/intern_pictures/Riya Atlas_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Riya Atlas_ai_avatar.jpg",
     "name": "Riya Atlas",
     "college_name": "National Institute of Technology Karnataka, Surathkal",
-    "about_yourself": "I m Riya Atlas, a girl from Himachal Pradesh who didn't know how to code two years back. Switching from mathematics to computer science and then being at Adobe as an intern was completely unexpected and I have realised after coming here only that I m enjoying what I m doing !!",
+    "about_yourself": "I m Riya Atlas, a girl from Himachal Pradesh who didn't know how to code two years back. Switching from mathematics to computer science and then being at Adobe as an intern was completely unexpected and I have realised after coming here only that I m enjoying what i
     "linkedin_link": "https://www.linkedin.com/in/riya-atlas-502922290",
     "git_link": "https://github.com/riyaatlas",
     "project_links": null,
@@ -305,7 +305,7 @@
   },
   {
     "employee_id": 20,
-    "photo": "/intern_pictures/Sagar Sharma_photo.jpg",
+    "photo": "/portal/intern_pictures/Sagar Sharma_photo.jpg",
     "ai_avatar": null,
     "name": "Sagar Sharma",
     "college_name": "MCA @ Christ University Bangalore",
@@ -321,8 +321,8 @@
   },
   {
     "employee_id": 21,
-    "photo": "/intern_pictures/Saicharan R_photo.jpg",
-    "ai_avatar": "/intern_pictures/Saicharan R_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Saicharan R_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Saicharan R_ai_avatar.png",
     "name": "Saicharan R",
     "college_name": "SRM IST , MCA",
     "about_yourself": null,
@@ -337,7 +337,7 @@
   },
   {
     "employee_id": 22,
-    "photo": "/intern_pictures/Saman Rahman_photo.jpg",
+    "photo": "/portal/intern_pictures/Saman Rahman_photo.jpg",
     "ai_avatar": null,
     "name": "Saman Rahman",
     "college_name": "SRMIST - MCA",
@@ -353,8 +353,8 @@
   },
   {
     "employee_id": 23,
-    "photo": "/intern_pictures/Samanvi P_photo.jpg",
-    "ai_avatar": "/intern_pictures/Samanvi P_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Samanvi P_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Samanvi P_ai_avatar.png",
     "name": "Samanvi P",
     "college_name": "PES University, BTech CSE",
     "about_yourself": "Hi! I'm a Computer Science engineering student from PES University with a strong interest in full-stack development, cloud computing, and AI-driven applications. I enjoy building scalable web applications and have hands-on experience with technologies like React, Node.js, and AWS. I'm currently enhancing my skills in backend integration and serverless architectures. Passionate about solving real-world problems through technology, I'm eager to contribute meaningfully to team projects and learn from experienced professionals. I thrive in collaborative environments and am always open to new challenges.",
@@ -363,14 +363,14 @@
     "project_links": null,
     "mentor_name": "Meera Ankam",
     "mentor_mantra": "She consistently approached every task assigned to her with enthusiasm and delivered results promptly. It would be great if she continues to build on this by proactively asking questions and exploring alternative approaches to enhance her problem-solving skills.",
-    "about_project": "Omnis AI is an intelligent web application designed to optimize and elevate user interaction with Adobe Experience Platform (AEP). The name \u201cOmnis,\u201d derived from Latin meaning \u201call,\u201d reflects our commitment to delivering a holistic solution for automating AEP tasks. By integrating Generative AI capabilities, Omnis AI empowers users to work more efficiently and achieve their goals with enhanced precision and speed.\n\nDuring development, one of the biggest challenges was implementing secure and scalable multi-organization support. We used AWS Cognito with custom attributes (custom:orgs) to associate users with multiple organizations and built a dynamic organization dropdown in the UI to reflect this. Connecting the frontend (React) with the backend (AWS Lambda via API Gateway) led to multiple CORS-related issues, requiring careful debugging of headers and preflight configurations.\n\nAnother complex task was syncing user authentication, signup, and org registration flows, all while maintaining a clean and responsive UI. There were several \"brain-fry\" moments\u2014like debugging broken axios calls and handling nested attribute updates in Cognito\u2014but each breakthrough taught us more about cloud architecture, security, and UI/backend synchronization. Overall, Omnis AI helped sharpen our full-stack development and serverless design skills significantly.",
+    "about_project": "Omnis AI is an intelligent web application designed to optimize and elevate user interaction with Adobe Experience Platform (AEP). The name \u201cOmnis,\u201d derived from Latin meaning \u201call,\u201d reflects our commitment to delivering a holistic solution for automating AEP tasks. By integrating Generative AI capabilities, Omnis AI empowers users to work more efficiently and achieve their goals with enhanced precision and speed.\n\nDuring development, one of the biggest challenges was implementing secure and scalable multi-organization support. We used AWS Cognito with custom attributes (custom:orgs) to associate users with multiple organizations and built a dynamic organization dropdown in the UI to reflect this. Connecting the frontend (React) with the backend (AWS Lambda via API Gateway) led to multiple CORS-related issues, requiring careful debugging of headers and preflight configurations.\n\nAnother complex task was syncing user authentication, signup, and org registration flows, all while maintaining a clean and responsive UI. There were several "brain-fry" moments\u2014like debugging broken axios calls and handling nested attribute updates in Cognito\u2014but each breakthrough taught us more about cloud architecture, security, and UI/backend synchronization. Overall, Omnis AI helped sharpen our full-stack development and serverless design skills significantly.",
     "about_adobe": "My internship journey has been an amazing blend of learning, growth, and fun. I had the opportunity to work on real-world projects, explore new technologies, and improve my problem-solving skills every day. One of the best parts was collaborating with a super supportive team who always encouraged me to ask questions and try new things. But my most unforgettable moment has to be attending \u201cAlchemy,\u201d the special program for interns\u2014it was such a refreshing break filled with fun activities, great vibes, and of course, amazing food! I absolutely loved spending time in the cafeteria, enjoying the variety of snacks and meals (yes, I looked forward to lunch every day \ud83e\udd2d). I also enjoyed playing games with my new friends during free time. This internship didn\u2019t just teach me tech\u2014it gave me memories and friendships I\u2019ll always cherish.",
     "competency": "Data"
   },
   {
     "employee_id": 24,
-    "photo": "/intern_pictures/Saumya Dwivedi_photo.jpg",
-    "ai_avatar": "/intern_pictures/Saumya Dwivedi_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Saumya Dwivedi_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Saumya Dwivedi_ai_avatar.png",
     "name": "Saumya Dwivedi",
     "college_name": "Christ (Deemed to be) University Banaglore, MCA",
     "about_yourself": "I would describe myself as someone who is always eager to learn and curious about how things work. From a young age, I\u2019ve had a deep interest in exploring new ideas, and that curiosity has shaped both my academic and personal journey. Sometimes, I pause and reflect\u2014it's surreal to think that the little girl who once wondered what her 20s would look like has come this far, learning, growing, and stepping into the professional world. That sense of wonder still drives me today. As I continue on this path, I\u2019m excited about every opportunity that allows me to challenge myself, build meaningful experiences, and contribute something valuable along the way.",
@@ -385,8 +385,8 @@
   },
   {
     "employee_id": 25,
-    "photo": "/intern_pictures/Shruti Chaurasia_photo.jpg",
-    "ai_avatar": "/intern_pictures/Shruti Chaurasia_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Shruti Chaurasia_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Shruti Chaurasia_ai_avatar.png",
     "name": "Shruti Chaurasia",
     "college_name": "Maulana Azad National Institute of Technology, Bhopal (MCA)",
     "about_yourself": "I am a curious and forward-thinking individual with a passion for building meaningful tech experiences. I love turning ideas into action, whether it's through clean code, clever UI, or just asking the right questions. I\u2019m constantly exploring, learning, and creating \u2014 with a strong focus on problem-solving, people-centric design, and pushing the boundaries of what I can do.",
@@ -401,8 +401,8 @@
   },
   {
     "employee_id": 26,
-    "photo": "/intern_pictures/Siyona Snotra_photo.jpg",
-    "ai_avatar": "/intern_pictures/Siyona Snotra_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Siyona Snotra_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Siyona Snotra_ai_avatar.png",
     "name": "Siyona Snotra",
     "college_name": "Christ University, MCA",
     "about_yourself": "I\u2019m Siyona, a passionate Computer Science graduate with a strong interest in building smart, user-centric web applications. I\u2019ve gained hands-on experience through internships and academic projects involving Front-end(UI) development, data analysis, and AI-driven interfaces. I enjoy turning real-world problems into intuitive digital solutions using technologies like React, Python, and cloud platforms. With a solid foundation in software development and a keen eye for design and logic, I\u2019m continuously exploring innovative ideas that blend functionality with impactful user experiences.",
@@ -417,7 +417,7 @@
   },
   {
     "employee_id": 27,
-    "photo": "/intern_pictures/Sneha Dange_photo.jpg",
+    "photo": "/portal/intern_pictures/Sneha Dange_photo.jpg",
     "ai_avatar": null,
     "name": "Sneha Dange",
     "college_name": "Maulana Azad National Institute of Technology, Master of Computer Applications",
@@ -433,7 +433,7 @@
   },
   {
     "employee_id": 28,
-    "photo": "/intern_pictures/Sriganesh Gangadhar_photo.jpg",
+    "photo": "/portal/intern_pictures/Sriganesh Gangadhar_photo.jpg",
     "ai_avatar": null,
     "name": "Sriganesh Gangadhar",
     "college_name": "PES University Btech CSE",
@@ -449,7 +449,7 @@
   },
   {
     "employee_id": 29,
-    "photo": "/intern_pictures/Suhani Jain_photo.jpg",
+    "photo": "/portal/intern_pictures/Suhani Jain_photo.jpg",
     "ai_avatar": null,
     "name": "Suhani Jain",
     "college_name": "Plaksha University Computer Science and Artificial Intelligence",
@@ -465,7 +465,7 @@
   },
   {
     "employee_id": 30,
-    "photo": "/intern_pictures/Thanishk Narayanan_photo.jpg",
+    "photo": "/portal/intern_pictures/Thanishk Narayanan_photo.jpg",
     "ai_avatar": null,
     "name": "Thanishk Narayanan",
     "college_name": "Computer Science and Engineering, PES University",
@@ -481,8 +481,8 @@
   },
   {
     "employee_id": 31,
-    "photo": "/intern_pictures/Vaishhnavi Kadiyala_photo.jpg",
-    "ai_avatar": "/intern_pictures/Vaishhnavi Kadiyala_ai_avatar.png",
+    "photo": "/portal/intern_pictures/Vaishhnavi Kadiyala_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Vaishhnavi Kadiyala_ai_avatar.png",
     "name": "Vaishhnavi Kadiyala",
     "college_name": "Energy Institute of Bengaluru , B,Tech , Computer Science Engineering",
     "about_yourself": null,
@@ -513,8 +513,8 @@
   },
   {
     "employee_id": 33,
-    "photo": "/intern_pictures/Vridhi Nahata_photo.jpg",
-    "ai_avatar": "/intern_pictures/Vridhi Nahata_ai_avatar.jpg",
+    "photo": "/portal/intern_pictures/Vridhi Nahata_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Vridhi Nahata_ai_avatar.jpg",
     "name": "Vridhi Nahata",
     "college_name": "Maulana Azad National Institute of Technology, Bhopal (MCA)",
     "about_yourself": null,
@@ -529,8 +529,8 @@
   },
   {
     "employee_id": 34,
-    "photo": "/intern_pictures/Yajvin Rautela_photo.jpg",
-    "ai_avatar": "/intern_pictures/Yajvin Rautela_ai_avatar.jpg",
+    "photo": "/portal/intern_pictures/Yajvin Rautela_photo.jpg",
+    "ai_avatar": "/portal/intern_pictures/Yajvin Rautela_ai_avatar.jpg",
     "name": "Yajvin Rautela",
     "college_name": "Vellore Institute of Technology - Vellore",
     "about_yourself": "I am a fitness enthusiast , and an avid Anime Fan. Contradicting, yes. But what\u2019s life without a little bit of contradictions?",
@@ -545,7 +545,7 @@
   },
   {
     "employee_id": 35,
-    "photo": "/intern_pictures/Yashi Singh_photo.jpg",
+    "photo": "/portal/intern_pictures/Yashi Singh_photo.jpg",
     "ai_avatar": null,
     "name": "Yashi Singh",
     "college_name": "MCA, NIT BHOPAL",

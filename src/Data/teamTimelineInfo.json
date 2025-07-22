@@ -1,32 +1,32 @@
 {
   "Workfront": {
-    "desktop": "/timelines/workfront-desktop-timeline.png",
-    "mobile": "/timelines/workfront-mobile-timeline.png",
+    "desktop": "/portal/timelines/workfront-desktop-timeline.png",
+    "mobile": "/portal/timelines/workfront-mobile-timeline.png",
     "description": "Workfront is a project management tool that helps teams plan, execute, and deliver projects efficiently."
   },
   "UI": {
-    "desktop": "/timelines/ui-desktop-timeline.png",
-    "mobile": "/timelines/ui-mobile-timeline.png",
+    "desktop": "/portal/timelines/ui-desktop-timeline.png",
+    "mobile": "/portal/timelines/ui-mobile-timeline.png",
     "description": "We progress by Reacting to demands, beautifully."
   },
   "UX": {
-    "desktop": "/timelines/ux-desktop-timeline.png",
-    "mobile": "/timelines/ux-mobile-timeline.png",
+    "desktop": "/portal/timelines/ux-desktop-timeline.png",
+    "mobile": "/portal/timelines/ux-mobile-timeline.png",
     "description": "Creating user-centered designs that enhance the overall experience."
   },
   "Data": {
-    "desktop": "/timelines/data-desktop-timeline.png",
-    "mobile": "/timelines/data-mobile-timeline.png",
+    "desktop": "/portal/timelines/data-desktop-timeline.png",
+    "mobile": "/portal/timelines/data-mobile-timeline.png",
     "description": "Leveraging data-driven insights to inform design decisions."
   },
   "CJM": {
-    "desktop": "/timelines/cjm-desktop-timeline.png",
-    "mobile": "/timelines/cjm-mobile-timeline.png",
+    "desktop": "/portal/timelines/cjm-desktop-timeline.png",
+    "mobile": "/portal/timelines/cjm-mobile-timeline.png",
     "description": "Mapping customer journeys to improve user experience and satisfaction."
   },
   "AEM": {
-    "desktop": "/timelines/aem-desktop-timeline.png",
-    "mobile": "/timelines/aem-mobile-timeline.png",
+    "desktop": "/portal/timelines/aem-desktop-timeline.png",
+    "mobile": "/portal/timelines/aem-mobile-timeline.png",
     "description": "Adobe Experience Manager (AEM) is a comprehensive content management solution for building websites, mobile apps, and forms."
   }
 }
