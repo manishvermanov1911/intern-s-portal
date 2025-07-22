@@ -1,21 +1,21 @@
 // src/main.jsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom"; // ✅ Add this
+import { HashRouter } from "react-router-dom"; // ✅ Changed to HashRouter
 import "./index.css";
 import App from "./App.jsx";
 import NavBar from "./Components/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
-import Background from "./Components/background.jsx"; // ✅ Import Background
+import Background from "./Components/background.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      {/* ✅ Wrap App with Router */}
+    <HashRouter>
       <Background />
-      <NavBar /> {/* ✅ Include NavBar */}
+      <NavBar />
       <App className="font-body" />
-      <Footer /> {/* ✅ Include Footer */}
-    </BrowserRouter>
+      <Footer />
+    </HashRouter>
   </StrictMode>,
+);
 );

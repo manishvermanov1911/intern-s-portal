@@ -21,7 +21,7 @@ const TeamPageComponent = ({
         {isMobile && (
           <div className="mt-12 mb-8 self-start">
             <a
-              href="/teams"
+              href="#/teams"
               className="w-24 h-10 rounded-3xl flex items-center justify-start gap-2 transition"
             >
               <img src={testArrow} alt="<" />
@@ -37,7 +37,7 @@ const TeamPageComponent = ({
             <div className="absolute left-0 -top-1/2 flex items-center gap-2">
               {/* Red Pill */}
               <a
-                href="/teams"
+                href="#/teams"
                 className="w-24 h-10 bg-[#FF0000] hover:bg-[#cc0000] rounded-3xl flex items-center justify-center gap-2 transition"
               >
                 <img src={testArrow} alt="<" />
@@ -73,7 +73,7 @@ const TeamPageComponent = ({
               name={member.name}
               image={member.photo}
               bio={member.about_yourself}
-              profileLink={`/intern/${member.employee_id - 1}`}
+              profileLink={`#/intern/${member.employee_id - 1}`}
             />
           ))}
         </div>

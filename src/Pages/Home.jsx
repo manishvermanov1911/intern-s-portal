@@ -4,19 +4,19 @@ import useIsMobile from "../Components/useIsMobile";
 // Add images JSON array
 const marqueeImages = [
   {
-    src: "/home/1.jpeg",
+    src: "/portal/home/1.jpeg",
     alt: "Intern event 1",
   },
   {
-    src: "/home/2.jpeg",
+    src: "/portal/home/2.jpeg",
     alt: "Intern event 2",
   },
   {
-    src: "/home/3.jpeg",
+    src: "/portal/home/3.jpeg",
     alt: "Intern event 3",
   },
   {
-    src: "/home/4.jpeg",
+    src: "/portal/home/4.jpeg",
     alt: "Intern event 4",
   },
 ];
@@ -154,13 +154,13 @@ export default function Home() {
 
       <div className="flex gap-4 bg-black justify-center mb-32">
         <a
-          href="/teams"
+          href="#/teams"
           className="flex flex-row items-center justify-center w-36 h-12 rounded-3xl bg-[#FF0000] hover:bg-[#CC0000] text-white font-medium transition"
         >
           Find Out More!
         </a>
         <a
-          href="/gallery"
+          href="#/gallery"
           className="flex flex-row items-center justify-center w-36 h-12 rounded-3xl border-2 border-[#ff0000] text-white font-medium hover:bg-[#ff0000] transition"
         >
           View Gallery

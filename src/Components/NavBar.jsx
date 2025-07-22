@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Teams", href: "/teams" },
-  // { name: "Journal", href: "/journal" },
-  { name: "FAQs", href: "/faq" },
-  { name: "Gallery", href: "/gallery" },
+  { name: "Home", href: "#/" },
+  { name: "Teams", href: "#/teams" },
+  { name: "FAQs", href: "#/faq" },
+  { name: "Gallery", href: "#/gallery" },
 ];
 
 export default function NavBar() {
@@ -15,8 +14,8 @@ export default function NavBar() {
     <nav className="w-full fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <a href="/" className="flex items-center">
-          <img src="/AdobeLogo.svg" alt="Adobe Logo" className="h-8" />
+        <a href="#/" className="flex items-center">
+          <img src="/portal/AdobeLogo.svg" alt="Adobe Logo" className="h-8" />
         </a>
 
         {/* Desktop Nav */}
@@ -80,4 +79,5 @@ export default function NavBar() {
       )}
     </nav>
   );
+}
 }

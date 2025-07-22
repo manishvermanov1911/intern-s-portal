@@ -46,7 +46,7 @@ export default function Teams() {
               key={index}
               title={item.title}
               description={item.description}
-              href={"/teams/" + item.title.toLowerCase()}
+              href={"#/teams/" + item.title.toLowerCase()}
             />
           ))}
         </div>
