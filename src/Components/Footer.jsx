@@ -1,10 +1,11 @@
 import React from "react";
 
 const navLinks = [
-  { name: "Home", href: import.meta.env.BASE_URL },
-  { name: "Teams", href: import.meta.env.BASE_URL + "teams" },
-  { name: "FAQs", href: import.meta.env.BASE_URL + "faq" },
-  { name: "Gallery", href: import.meta.env.BASE_URL + "gallery" },
+  { name: "Home", href: "/" },
+  { name: "Teams", href: "/portal/teams" },
+  { name: "Journal", href: "/portal/journal" },
+  { name: "FAQs", href: "/portal/faq" },
+  { name: "Gallery", href: "/portal/gallery" },
 ];
 
 const creators = [
