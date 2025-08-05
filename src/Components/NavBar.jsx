@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const navItems = [
   { name: "Home", href: "#/" },
@@ -9,9 +9,22 @@ const navItems = [
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50">
+    <nav
+      className={`w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
+        scrolled ? "bg-black/50 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <a href="#/" className="flex items-center">
@@ -25,7 +38,7 @@ export default function NavBar() {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-body px-3 py-1 rounded-full transition-colors duration-200 text-white hover:font-medium`}
+                className="font-body px-3 py-1 rounded-full transition-colors duration-200 text-white hover:font-medium"
               >
                 {item.name}
               </a>
@@ -62,7 +75,6 @@ export default function NavBar() {
       {/* Mobile Nav - Full Screen Overlay */}
       {menuOpen && (
         <div className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center md:hidden">
-          {/* Nav Items - Centered */}
           <div className="flex flex-col items-center space-y-8">
             {navItems.map((item) => (
               <a
