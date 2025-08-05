@@ -3,7 +3,6 @@ import React from "react";
 const navLinks = [
   { name: "Home", href: "#/" },
   { name: "Teams", href: "#/teams" },
-  { name: "Journal", href: "#/journal" },
   { name: "FAQs", href: "#/faq" },
   { name: "Gallery", href: "#/gallery" },
 ];
