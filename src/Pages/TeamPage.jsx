@@ -6,34 +6,35 @@ import NotFound from "./NotFound";
 
 export const TeamPage = ({ interns }) => {
   const params = useParams();
+  const teamName = params.name.toLowerCase();
 
-  // params.name is one of ["Workfront", "AEM", "Data", "UI", "UX", "CJM"]
+  const validTeams = Object.keys(teamTimelineInfo).map((key) => key.toLowerCase());
 
-  const teamName = params.name;
-  if (
-    !teamName ||
-    !["workfront", "aem", "data", "ui", "ux", "cjm"].includes(teamName)
-  ) {
+  if (!teamName || !validTeams.includes(teamName)) {
     return <NotFound />;
   }
-  const paramToProperCase = {
-    workfront: "Workfront",
-    aem: "AEM",
-    data: "Data",
-    ui: "UI",
-    ux: "UX",
-    cjm: "CJM",
+
+  const team = Object.keys(teamTimelineInfo).find(
+    (key) => key.toLowerCase() === teamName
+  );
+
+  const teamData = interns.filter((intern) => intern.competency.toLowerCase() === teamName);
+
+  const formatTeamName = (name) => {
+    if (name.toUpperCase() === "SCOE") return "SCoE";
+    return name;
   };
-  const team = paramToProperCase[teamName.toLowerCase()];
-  const teamData = interns.filter((intern) => intern.competency === team);
+
+  const hideTimeline = team.toLowerCase() === "scoe";
 
   return (
     <TeamPageComponent
-      team={team}
+      team={formatTeamName(team)}
       teamMembers={teamData}
       timelineImage={teamTimelineInfo[team].desktop}
       teamMobileImage={teamTimelineInfo[team].mobile}
       teamDescription={teamTimelineInfo[team].description}
+      hideTimeline={hideTimeline}
     />
   );
 };

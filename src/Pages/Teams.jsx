@@ -4,31 +4,15 @@ import TeamCard from "../components/TeamCard";
 import teamTimelineInfo from "../Data/teamTimelineInfo.json";
 
 const competencies = [
-  {
-    title: "AEM",
-    description: teamTimelineInfo.AEM.description,
-  },
-  {
-    title: "UI",
-    description: teamTimelineInfo.UI.description,
-  },
-  {
-    title: "Data",
-    description: teamTimelineInfo.Data.description,
-  },
-  {
-    title: "CJM",
-    description: teamTimelineInfo.CJM.description,
-  },
-  {
-    title: "UX",
-    description: teamTimelineInfo.UX.description,
-  },
-  {
-    title: "Workfront",
-    description: teamTimelineInfo.Workfront.description,
-  },
+  { title: "AEM", description: teamTimelineInfo.AEM.description },
+  { title: "UI", description: teamTimelineInfo.UI.description },
+  { title: "Data", description: teamTimelineInfo.Data.description },
+  { title: "CJM", description: teamTimelineInfo.CJM.description },
+  { title: "UX", description: teamTimelineInfo.UX.description },
+  { title: "Workfront", description: teamTimelineInfo.Workfront.description },
+  { title: "SCoE", description: teamTimelineInfo.SCoE.description },  // <-- Add this line
 ];
+
 
 export default function Teams() {
   return (

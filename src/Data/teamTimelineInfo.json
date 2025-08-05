@@ -28,5 +28,10 @@
     "desktop": "/portal/timelines/aem-desktop-timeline.png",
     "mobile": "/portal/timelines/aem-mobile-timeline.png",
     "description": "Adobe Experience Manager (AEM) is a comprehensive content management solution for building websites, mobile apps, and forms."
+  },
+  "SCoE": {
+    "desktop": "/portal/timelines/scoe-desktop-timeline.png",
+    "mobile": "/portal/timelines/scoe-mobile-timeline.png",
+    "description": "SCoE (Special Center of Excellence) focuses on building innovative, scalable solutions for Adobe's internal tools and platforms."
   }
 }

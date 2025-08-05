@@ -9,6 +9,7 @@ const TeamPageComponent = ({
   timelineImage,
   teamMobileImage,
   teamDescription,
+  hideTimeline,
 }) => {
   const members = teamMembers;
 
@@ -79,23 +80,28 @@ const TeamPageComponent = ({
         </div>
 
         {/* Timeline Title */}
-        <h2 className="text-center text-3xl md:text-5xl font-title font-normal text-white mb-8">
-          Our Internship Timeline
-        </h2>
+        {!hideTimeline && (
+  <>
+    <h2 className="text-center text-3xl md:text-5xl font-title font-normal text-white mb-8">
+      Our Internship Timeline
+    </h2>
 
-        {!isMobile ? (
-          <img
-            src={timelineImage}
-            alt={`${team} Timeline`}
-            className="w-full mb-8 h-auto object-contain"
-          />
-        ) : (
-          <img
-            src={teamMobileImage}
-            alt={`${team} Timeline`}
-            className="w-full mb-8 h-auto object-contain"
-          />
-        )}
+    {!isMobile ? (
+      <img
+        src={timelineImage}
+        alt={`${team} Timeline`}
+        className="w-full mb-8 h-auto object-contain"
+      />
+    ) : (
+      <img
+        src={teamMobileImage}
+        alt={`${team} Timeline`}
+        className="w-full mb-8 h-auto object-contain"
+      />
+    )}
+  </>
+)}
+
       </div>
     </div>
   );

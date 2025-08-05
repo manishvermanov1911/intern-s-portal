@@ -8,18 +8,23 @@ const navLinks = [
 ];
 
 const creators = [
-  ["@pranjalr", "https://linkedin.com/in/pranjal-rastogi-pjr"],
-  ["@harshithas", "/harshitha-linkedin-not-found"],
-  ["@snehadange", "https://www.linkedin.com/in/sneha-dange-2002021b8"],
-  ["@arshitt", "https://www.linkedin.com/in/arshit-tiwari/"],
-  ["@piyushpatel", "https://www.linkedin.com/in/piyush-patel-03236b250/"],
-  ["@priyasing", "https://www.linkedin.com/in/priya-singh-8a2050216/"],
-  ["@saumyad", "https://www.linkedin.com/in/dwivedisaumya"],
-  ["@bharlalka", "https://www.linkedin.com/in/bhavya-harlalka-16774a318/"],
-  ["@manishverma", "/manish-linkedin-not-found"],
-  ["@amansingla", "https://www.linkedin.com/in/aman-singla-7a481a160/"],
-  ["@yrautela", "https://www.linkedin.com/in/yajvin-rautela-a02142253/"],
-  ["@shchaurasia", "https://www.linkedin.com/in/shruti-chaurasia-8890bb211/"],
+  ["@PranjalRastogi", "https://linkedin.com/in/pranjal-rastogi-pjr"],
+  
+  ["@HarshithaS", "https://www.behance.net/prabhas3"],
+  ["@ManishVerma", "https://github.com/manishvermanov"],
+  ["@Yajvin", "https://www.linkedin.com/in/yajvin-rautela-a02142253/"],
+  ["@SnehaDange", "https://www.linkedin.com/in/sneha-dange-2002021b8"],
+  
+  ["@Shruti", "https://www.linkedin.com/in/shruti-chaurasia-8890bb211/"],
+  ["@BhavyaHarlalka", "https://www.linkedin.com/in/bhavya-harlalka-16774a318/"],
+
+  ["@PriyaSingh", "https://www.linkedin.com/in/priya-singh-8a2050216/"],
+  ["@SaumyaDwivedi", "https://www.linkedin.com/in/dwivedisaumya"],
+  ["@ArshitTiwari", "https://www.linkedin.com/in/arshit-tiwari/"],
+  ["@AmanSingla", "https://www.linkedin.com/in/aman-singla-7a481a160/"],
+  ["@PiyushPatel", "https://www.linkedin.com/in/piyush-patel-03236b250/"],
+  
+  
 ];
 
 export default function Footer() {
